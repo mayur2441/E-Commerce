@@ -1,0 +1,46 @@
+.navbar-gradient {
+    --bs-navbar-bg: transparent !important;
+  background-color: transparent !important;
+  background-image: linear-gradient(135deg, #11aaeb, #203a43, #2c5364) !important;
+
+}
+
+.footer-gradient {
+  background: linear-gradient(135deg, #11aaeb, #203a43, #2c5364);
+}
+
+.footer-title {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #9fbad1;
+  margin-bottom: 15px;
+}
+
+
+
+.footer-link {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 14px;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.footer-link:hover {
+  color: #6ec1e4;
+  text-decoration: underline;
+}
+
+.footer-icon {
+  font-size: 20px;
+  cursor: pointer;
+  color: #ffffff;
+}
+
+.footer-icon:hover {
+  color: #6ec1e4;
+}
+.footer-copyright {
+  color: #ffffff !important;
+  font-size: 14px;
+}

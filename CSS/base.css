@@ -4,6 +4,18 @@
   background-image: linear-gradient(135deg, #11aaeb, #203a43, #2c5364) !important;
 
 }
+.logo-wrapper {
+  background: #ffffff;
+  padding: 6px 10px;
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.logo-wrapper img {
+  height: 48px;      /* better than width */
+  width: auto;
+}
 
 .footer-gradient {
   background: linear-gradient(135deg, #11aaeb, #203a43, #2c5364);

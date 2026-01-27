@@ -1,17 +1,262 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="/CSS/base.css">
+
 
 </head>
+
 <body>
-    
+    <header>
+        <!-- header with navigation bar -->
+        <nav class="navbar navbar-expand-lg navbar-gradient" data-bs-theme="dark">
+
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="/Resources/Icons/icon.png" alt="Bootstrap" width="120" height="60">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="new_arrivals.html">New Arrivals</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="categories.html">Categories</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="shop.html">Shop</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="deals.html">Deals</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="orders.html">Orders</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="cart.html">Cart</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="profile.html"> <i class="bi bi-person-circle me-1"></i>
+                                Profile</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- main section started -->
+    <main>
+        <!-- carousel slide -->
+        <section>
+            <div id="carouselExampleIndicators" class="carousel slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="/Resources/Images/slider1.webp" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/Resources/Images/slider3.webp" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/Resources/Images/slider4.webp" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+        <!-- carousel slide ended -->
+
+        <!-- about section started -->
+        <section>
+            <div class="container my-5">
+                <div class="row">
+                    <div class="col-md-8">
+                        <h2>About Our E-Commerce Store</h2>
+                        <p>Welcome to our e-commerce store! We are dedicated to providing you with the best online
+                            shopping experience. Our mission is to offer a wide range of high-quality products at
+                            competitive prices, along with exceptional customer service.</p>
+                        <p>Whether you're looking for the latest gadgets, fashionable clothing, or home essentials,
+                            we've got you covered. Our user-friendly website makes it easy to browse and find exactly
+                            what you need.</p>
+                        <p>Thank you for choosing our store. We look forward to serving you! <a class="btn btn-link"
+                                href="contact.html" role="button">more..</a></p>
+
+                    </div>
+                    <div class="col-md-4">
+                        <img src="/Resources/Images/Classroom.jpg" class="img-fluid" alt="About Us">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- about section ended -->
+
+        <!-- product section started -->
+
+        <section>
+            <div class="container my-5">
+                <h2 class="mb-4">Featured Products</h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="/Resources/Images/Product4.webp" class="card-img-top" alt="Product 1">
+                            <div class="card-body">
+                                <h5 class="card-title">Product 1</h5>
+                                <p class="card-text">$19.99</p>
+                                <a href="cart.html" class="btn btn-primary">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="/Resources/Images/Product2.webp" class="card-img-top" alt="Product 2">
+                            <div class="card-body">
+                                <h5 class="card-title">Product 2</h5>
+                                <p class="card-text">$29.99</p>
+                                <a href="cart.html" class="btn btn-primary">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="/Resources/Images/Product3.webp" class="card-img-top" alt="Product 3">
+                            <div class="card-body">
+                                <h5 class="card-title">Product 3</h5>
+                                <p class="card-text">$39.99</p>
+                                <a href="cart.html" class="btn btn-primary">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- product section ended -->
+
+
+    </main>
+    <!-- footer section started -->
+    <footer class="footer-gradient text-light pt-5 pb-4">
+        <div class="container">
+            <div class="row">
+
+                <!-- 1️⃣ LOGO + SITE NAME -->
+                <div class="col-md-3 mb-4">
+                           
+                
+                    <!-- Logo -->
+                    <img src="/Resources/Icons/icon.png" class="img-fluid"  alt="FourSquare">
+                
+                    <!-- Tagline -->
+                    <p class="footer-tagline">
+                        Your Shopping, Our Team.<br>
+                        One stop destination for fashion & electronics.
+                    </p>
+                
+                </div>
+
+                <!-- 2️⃣ QUICK LINKS -->
+                <div class="col-md-3 mb-4">
+                    <h6 class="footer-title">Quick Links</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="footer-link">Home</a></li>
+                        <li><a href="new_arrivals.html" class="footer-link">New Arrivals</a></li>
+                        <li><a href="categories.html" class="footer-link">Categories</a></li>
+                        <li><a href="shop.html" class="footer-link">Shop</a></li>
+                        <li><a href="deals.html" class="footer-link">Deals</a></li>
+                        <li><a href="orders.html" class="footer-link">Orders</a></li>
+                        <li><a href="cart.html" class="footer-link">Cart</a></li>
+                        <li><a href="contact.html" class="footer-link">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- 3️⃣ MY PRODUCTS -->
+                <div class="col-md-3 mb-4">
+                    <h6 class="footer-title">My Products</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="footer-link">Men Clothing</a></li>
+                        <li><a href="#" class="footer-link">Women Clothing</a></li>
+                        <li><a href="#" class="footer-link">Kids Wear</a></li>
+                        <li><a href="#" class="footer-link">Mobiles</a></li>
+                        <li><a href="#" class="footer-link">Laptops</a></li>
+                        <li><a href="#" class="footer-link">Accessories</a></li>
+                    </ul>
+                </div>
+
+                <!-- 4️⃣ ADDRESS / EMAIL / CONTACT -->
+                <div class="col-md-3 mb-4">
+                    <h6 class="footer-title">Contact</h6>
+                    <p class="small mb-2">
+                        <i class="bi bi-geo-alt me-2"></i>
+                        Fortune Cloud Technologies Private Limited,  7th Floor, Bramha Sky Uzuri,Pimpri Colony, Pimpri-Chinchwad<br>
+                        Maharashtra, India - 411018
+                    </p>
+                    <p class="small mb-2">
+                        <i class="bi bi-envelope me-2"></i>
+                        info@fortunecloudindia.com
+                    </p>
+                    <p class="small">
+                        <i class="bi bi-telephone me-2"></i>
+                        +91 080029 49090
+                    </p>
+
+                    <!-- Social Icons -->
+                    <div class="d-flex gap-3 mt-3">
+                        <i class="bi bi-facebook footer-icon"></i>
+                        <i class="bi bi-instagram footer-icon"></i>
+                        <i class="bi bi-twitter-x footer-icon"></i>
+                        <i class="bi bi-youtube footer-icon"></i>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Bottom Line -->
+            <div class="text-center border-top pt-3 mt-3 small text-muted footer-copyright">
+                © 2026 FourSquare. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- footer section ended -->
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
 </body>
+
 </html>

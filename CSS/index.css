@@ -1,0 +1,49 @@
+.category-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.category-card {
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: none;
+  overflow: hidden;
+}
+
+.category-card img {
+  height: 130px;
+  width: 100%;
+  object-fit: contain;
+  transition: transform 0.4s ease;
+}
+
+/* Hover Effect */
+.category-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+.category-card:hover img {
+  transform: scale(1.08);
+}
+
+.category-card:hover .card-title {
+  color: #0d6efd; /* Bootstrap primary */
+}
+
+.product-card {
+  transition: all 0.35s ease;
+  cursor: pointer;
+  border: none;
+}
+
+.product-card img {
+  height: 220px;
+  object-fit: cover;
+}
+
+.product-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+

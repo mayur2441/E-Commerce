@@ -9,6 +9,7 @@
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <link rel="stylesheet" href="/CSS/base.css">
+    <link rel="stylesheet" href="/CSS/index.css">
 
 
 </head>
@@ -36,8 +37,8 @@
                             <a class="nav-link" href="new_arrivals.html">New Arrivals</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="categories.html" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" href="categories.html" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
                                 Categories
                             </a>
                             <ul class="dropdown-menu">
@@ -79,7 +80,7 @@
     <main>
         <!-- carousel slide -->
         <section>
-            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div id="carouselExampleIndicators"  class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
                         class="active d-none" aria-current="true" aria-label="Slide 1"></button>
@@ -140,56 +141,656 @@
 
                     </div>
                     <div class="col-md-4">
-                        <img src="/Resources/Images/Classroom.jpg" class="img-fluid" alt="About Us">
+                        <img src="/Resources/Images/about.jpg" class="img-fluid" alt="About Us">
                     </div>
                 </div>
             </div>
         </section>
+
         <!-- about section ended -->
+
+
+        <!-- Categories section started -->
+        <section class="container my-5">
+            <h3 class="text-center mb-4">Shop by Category</h3>
+
+            <div class="row g-4">
+
+                <!-- Clothing -->
+
+
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <a href="#clothing" class="category-link">
+                        <div class="card h-100 category-card">
+                            <img src="/Resources/Images/cloths.png" class="card-img-top" alt="Clothing">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Clothing</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Home Appliances -->
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <a href="#home_appliances" class="category-link">
+                        <div class="card h-100 category-card">
+                            <img src="/Resources/Images/home_appliances.png" class="card-img-top" alt="Home Appliances">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Home Appliances</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Toys -->
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <a href="#toys" class="category-link">
+                        <div class="card h-100 category-card">
+                            <img src="/Resources/Images/toys.png" class="card-img-top" alt="Toys">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Toys</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+                <!-- Mobile -->
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <a href="#mobile" class="category-link">
+                        <div class="card h-100 category-card">
+                            <img src="/Resources/Images/mobile.png" class="card-img-top" alt="Mobile">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Mobile</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Electronics -->
+                <div class="col-lg-3 col-md-4 col-sm-6 hover-effect">
+                    <a href="#electronics" class="category-link">
+                        <div class="card h-100 category-card">
+                            <img src="/Resources/Images/electronics.png" class="card-img-top" alt="Electronics">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Electronics</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Beauty -->
+                <div class="col-lg-3 col-md-4 col-sm-6 hover-effect">
+                    <a href="#beauty" class="category-link">
+                        <div class="card h-100 category-card">
+                            <img src="/Resources/Images/beauty.png" class="card-img-top" alt="Beauty">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Beauty</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- sports -->
+                <div class="col-lg-3 col-md-4 col-sm-6 hover-effect">
+                    <a href="#sports" class="category-link">
+                        <div class="card h-100 category-card">
+                            <img src="/Resources/Images/sports.png" class="card-img-top" alt="Sports">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Sports</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+
+                <!-- watches -->
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <a href="#watches" class="category-link">
+                        <div class="card h-100 category-card">
+                            <img src="/Resources/Images/watches.png" class="card-img-top" alt="Watches">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Watches</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Footwear -->
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <a href="#footwear" class="category-link">
+                        <div class="card h-100 category-card">
+                            <img src="/Resources/Images/footwear.png" class="card-img-top" alt="Footwear">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Footwear</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Medical -->
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <a href="#medical" class="category-link">
+                        <div class="card h-100 category-card">
+                            <img src="/Resources/Images/medical.png" class="card-img-top" alt="Medical">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Medical Equipments</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+
+            </div>
+        </section>
+
+
+        <!-- categories section ended -->
 
         <!-- product section started -->
 
         <section>
             <div class="container my-5">
-                <h2 class="mb-4">Featured Products</h2>
-                <div class="row">
+                <h2 class="text-center mb-4">Featured Products</h2>
+                <h4 id="clothing" class="mb-4">Clothing</h4>
+                <div  class="row g-4 mb-5">
+
+                    <!-- Product 1 -->
                     <div class="col-md-4">
-                        <div class="card">
-                            <img src="/Resources/Images/Product4.webp" class="card-img-top" alt="Product 1">
-                            <div class="card-body">
-                                <h5 class="card-title">Product 1</h5>
-                                <p class="card-text">$19.99</p>
-                                <a href="cart.html" class="btn btn-primary">Add to Cart</a>
+                        <div class="card product-card h-100">
+                            <img src="/Resources/Images/Product4.webp" class="card-img-top">
+                            <div class="card-body text-center">
+                                <h5>Men T-Shirt</h5>
+                                <p>₹799</p>
+                                <a class="btn btn-primary btn-sm" data-bs-toggle="modal"
+                                    data-bs-target="#Clothing1Cart">Add to Cart</a>
+                                <a class="btn btn-outline-primary btn-sm" data-bs-toggle="modal"
+                                    data-bs-target="#Clothing1Details">View Details</a>
                             </div>
                         </div>
                     </div>
+
+                    <!-- Product 2 -->
                     <div class="col-md-4">
-                        <div class="card">
-                            <img src="/Resources/Images/Product2.webp" class="card-img-top" alt="Product 2">
-                            <div class="card-body">
-                                <h5 class="card-title">Product 2</h5>
-                                <p class="card-text">$29.99</p>
-                                <a href="cart.html" class="btn btn-primary">Add to Cart</a>
+                        <div class="card product-card h-100">
+                            <img src="/Resources/Images/womendress.jpeg" class="card-img-top">
+                            <div class="card-body text-center">
+                                <h5>Women Dress</h5>
+                                <p>₹1,299</p>
+                                <a class="btn btn-primary btn-sm" data-bs-toggle="modal"
+                                    data-bs-target="#Clothing2Cart">Add to Cart</a>
+                                <a class="btn btn-outline-primary btn-sm" data-bs-toggle="modal"
+                                    data-bs-target="#Clothing2Details">View Details</a>
                             </div>
                         </div>
                     </div>
+
+                    <!-- Product 3 -->
                     <div class="col-md-4">
-                        <div class="card">
-                            <img src="/Resources/Images/Product3.webp" class="card-img-top" alt="Product 3">
-                            <div class="card-body">
-                                <h5 class="card-title">Product 3</h5>
-                                <p class="card-text">$39.99</p>
-                                <a href="cart.html" class="btn btn-primary">Add to Cart</a>
+                        <div class="card product-card h-100">
+                            <img src="/Resources/Images/kidsdress.jpeg" class="card-img-top">
+                            <div class="card-body text-center">
+                                <h5>Kids Wear</h5>
+                                <p>₹599</p>
+                                <a class="btn btn-primary btn-sm" data-bs-toggle="modal"
+                                    data-bs-target="#Clothing3Cart">Add to Cart</a>
+                                <a class="btn btn-outline-primary btn-sm" data-bs-toggle="modal"
+                                    data-bs-target="#Clothing3Details">View Details</a>
                             </div>
                         </div>
                     </div>
+
                 </div>
+
+                <h4 id="home_appliances" class="mb-4">Home Appliances</h4>
+                <div  class="row g-4 mb-5">
+                
+                    <div class="col-md-4">
+                        <div class="card product-card">
+                            <img src="/Resources/Images/fridge.jpeg">
+                            <div class="card-body text-center">
+                                <h5>Refrigerator</h5>
+                                <p>₹14,999</p>
+                                <a class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#Home1Cart">Add to Cart</a>
+                                <a class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#Home1Details">View
+                                    Details</a>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="col-md-4">
+                        <div class="card product-card">
+                            <img src="/Resources/Images/washing.jpeg">
+                            <div class="card-body text-center">
+                                <h5>Washing Machine</h5>
+                                <p>₹12,499</p>
+                                <a class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#Home2Cart">Add to Cart</a>
+                                <a class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#Home2Details">View
+                                    Details</a>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="col-md-4">
+                        <div class="card product-card">
+                            <img src="/Resources/Images/microwave.jpeg">
+                            <div class="card-body text-center">
+                                <h5>Microwave Oven</h5>
+                                <p>₹7,999</p>
+                                <a class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#Home3Cart">Add to Cart</a>
+                                <a class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#Home3Details">View
+                                    Details</a>
+                            </div>
+                        </div>
+                    </div>
+                
+                </div>
+
+                <!-- ================================================= -->
+                <!-- TOYS -->
+                <!-- ================================================= -->
+                <h4 id="toys" class="mb-4">Toys</h4>
+                <div class="row g-4 mb-5">
+
+                    <div class="col-md-4">
+                        <div class="card product-card">
+                            <img src="/Resources/Images/toys.png">
+                            <div class="card-body text-center">
+                                <h5>Robot Toy</h5>
+                                <p>₹699</p>
+                                <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#Toys1Cart">Add to
+                                    Cart</button>
+                                <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal"
+                                    data-bs-target="#Toys1Details">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="col-md-4">
+                        <div class="card product-card">
+                            <img src="/Resources/Images/remote.jpeg">
+                            <div class="card-body text-center">
+                                <h5>Remote Car</h5>
+                                <p>₹999</p>
+                                <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#Toys2Cart">Add to
+                                    Cart</button>
+                                <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal"
+                                    data-bs-target="#Toys2Details">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="col-md-4">
+                        <div class="card product-card">
+                            <img src="/Resources/Images/building.jpeg">
+                            <div class="card-body text-center">
+                                <h5>Building Blocks</h5>
+                                <p>₹499</p>
+                                <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#Toys3Cart">Add to
+                                    Cart</button>
+                                <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal"
+                                    data-bs-target="#Toys3Details">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                
+                </div>
+
+                <!-- Mobile Section -->
+                <h4 id="mobile" class="mb-4">Mobile</h4>
+                <div  class="row g-4 mb-5">
+                
+                    <div class="col-md-4">
+                        <div class="card product-card">
+                            <img src="/Resources/Images/mobile.png">
+                            <div class="card-body text-center">
+                                <h5>Android Phone</h5>
+                                <p>₹9,999</p>
+                                <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#Mobile1Cart">Add to
+                                    Cart</button>
+                                <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal"
+                                    data-bs-target="#Mobile1Details">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="col-md-4">
+                        <div class="card product-card">
+                            <img src="/Resources/Images/iphone.jpeg">
+                            <div class="card-body text-center">
+                                <h5>iPhone</h5>
+                                <p>₹59,999</p>
+                                <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#Mobile2Cart">Add to
+                                    Cart</button>
+                                <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal"
+                                    data-bs-target="#Mobile2Details">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="col-md-4">
+                        <div class="card product-card">
+                            <img src="/Resources/Images/feature.jpeg">
+                            <div class="card-body text-center">
+                                <h5>Feature Phone</h5>
+                                <p>₹1,999</p>
+                                <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#Mobile3Cart">Add to
+                                    Cart</button>
+                                <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal"
+                                    data-bs-target="#Mobile3Details">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                
+                </div>
+                
+                
+                <!-- Electronics Section -->
+                <h4 id="electronics" class="mb-4">Electronics</h4>
+                <div  class="row g-4 mb-5">
+
+                    <div class="col-md-4">
+                        <div class="card product-card">
+                            <img src="/Resources/Images/laptop.jpeg">
+                            <div class="card-body text-center">
+                                <h5>Laptop</h5>
+                                <p>₹49,999</p>
+                                <button class="btn btn-primary btn-sm" data-bs-target="#Electronics1Cart" data-bs-toggle="modal">Add to
+                                    Cart</button>
+                                <button class="btn btn-outline-primary btn-sm" data-bs-target="#Electronics1Details"
+                                    data-bs-toggle="modal">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="col-md-4">
+                        <div class="card product-card">
+                            <img src="/Resources/Images/headphone.jpeg">
+                            <div class="card-body text-center">
+                                <h5>Headphones</h5>
+                                <p>₹2,499</p>
+                                <button class="btn btn-primary btn-sm" data-bs-target="#Electronics2Cart" data-bs-toggle="modal">Add to
+                                    Cart</button>
+                                <button class="btn btn-outline-primary btn-sm" data-bs-target="#Electronics2Details"
+                                    data-bs-toggle="modal">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="col-md-4">
+                        <div class="card product-card">
+                            <img src="/Resources/Images/bluetooth.jpeg">
+                            <div class="card-body text-center">
+                                <h5>Bluetooth Speaker</h5>
+                                <p>₹1,799</p>
+                                <button class="btn btn-primary btn-sm" data-bs-target="#Electronics3Cart" data-bs-toggle="modal">Add to
+                                    Cart</button>
+                                <button class="btn btn-outline-primary btn-sm" data-bs-target="#Electronics3Details"
+                                    data-bs-toggle="modal">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                
+                </div>
+                
+                
+                <!-- Beauty Section -->
+                <h4 id="beauty" class="mb-4">Beauty</h4>
+                <div  class="row g-4 mb-5">
+
+                    <div class="col-md-4">
+                        <div class="card product-card">
+                            <img src="/Resources/Images/beauty.png">
+                            <div class="card-body text-center">
+                                <h5>Makeup Kit</h5>
+                                <p>₹999</p>
+                                <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#Beauty1Cart">Add to
+                                    Cart</button>
+                                <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal"
+                                    data-bs-target="#Beauty1Details">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="col-md-4">
+                        <div class="card product-card">
+                            <img src="/Resources/Images/facecream.jpeg">
+                            <div class="card-body text-center">
+                                <h5>Face Cream</h5>
+                                <p>₹499</p>
+                                <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#Beauty2Cart">Add to
+                                    Cart</button>
+                                <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal"
+                                    data-bs-target="#Beauty2Details">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="col-md-4">
+                        <div class="card product-card">
+                            <img src="/Resources/Images/perfumes.jpeg">
+                            <div class="card-body text-center">
+                                <h5>Perfume</h5>
+                                <p>₹1,299</p>
+                                <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#Beauty3Cart">Add to
+                                    Cart</button>
+                                <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal"
+                                    data-bs-target="#Beauty3Details">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                
+                </div>
+                
+                
+                <!-- Sports Section -->
+                <h4 id="sports" class="mb-4">Sports</h4>
+                <div class="row g-4 mb-5">
+
+                    <div class="col-md-4">
+                        <div class="card product-card">
+                            <img src="/Resources/Images/sports.png">
+                            <div class="card-body text-center">
+                                <h5>Cricket Balls</h5>
+                                <p>₹1,499</p>
+                                <button class="btn btn-primary btn-sm" data-bs-target="#Sports1Cart" data-bs-toggle="modal">Add to
+                                    Cart</button>
+                                <button class="btn btn-outline-primary btn-sm" data-bs-target="#Sports1Details"
+                                    data-bs-toggle="modal">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="col-md-4">
+                        <div class="card product-card">
+                            <img src="/Resources/Images/football.jpeg">
+                            <div class="card-body text-center">
+                                <h5>Football</h5>
+                                <p>₹699</p>
+                                <button class="btn btn-primary btn-sm" data-bs-target="#Sports2Cart" data-bs-toggle="modal">Add to
+                                    Cart</button>
+                                <button class="btn btn-outline-primary btn-sm" data-bs-target="#Sports2Details"
+                                    data-bs-toggle="modal">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="col-md-4">
+                        <div class="card product-card">
+                            <img src="/Resources/Images/tennis.jpeg">
+                            <div class="card-body text-center">
+                                <h5>Tennis Kit</h5>
+                                <p>₹899</p>
+                                <button class="btn btn-primary btn-sm" data-bs-target="#Sports3Cart" data-bs-toggle="modal">Add to
+                                    Cart</button>
+                                <button class="btn btn-outline-primary btn-sm" data-bs-target="#Sports3Details"
+                                    data-bs-toggle="modal">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                
+                </div>
+                
+                
+                <!-- Watches section -->
+                
+                <h4 id="watches" class="mb-4">Watches</h4>
+                <div  class="row g-4 mb-5">
+                
+                    <div class="col-md-4">
+                        <div class="card product-card">
+                            <img src="/Resources/Images/watches.png">
+                            <div class="card-body text-center">
+                                <h5>Analog Watch</h5>
+                                <p>₹1,999</p>
+                                <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#Watches1Cart">Add to
+                                    Cart</button>
+                                <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal"
+                                    data-bs-target="#Watches1Details">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="col-md-4">
+                        <div class="card product-card">
+                            <img src="/Resources/Images/smartwatch.jpeg">
+                            <div class="card-body text-center">
+                                <h5>Smart Watch</h5>
+                                <p>₹3,999</p>
+                                <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#Watches2Cart">Add to
+                                    Cart</button>
+                                <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal"
+                                    data-bs-target="#Watches2Details">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="col-md-4">
+                        <div class="card product-card">
+                            <img src="/Resources/Images/luxury.jpeg">
+                            <div class="card-body text-center">
+                                <h5>Luxury Watch</h5>
+                                <p>₹9,999</p>
+                                <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#Watches3Cart">Add to
+                                    Cart</button>
+                                <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal"
+                                    data-bs-target="#Watches3Details">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                
+                </div>
+                
+                
+                <!-- Footwear section -->
+
+                <h4 id="footwear" class="mb-4">Footwear</h4>
+                <div class="row g-4 mb-5">
+
+                    <div class="col-md-4">
+                        <div class="card product-card">
+                            <img src="/Resources/Images/footwear.png">
+                            <div class="card-body text-center">
+                                <h5>Sandals</h5>
+                                <p>₹999</p>
+                                <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#Footwear1Cart">Add to
+                                    Cart</button>
+                                <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal"
+                                    data-bs-target="#Footwear1Details">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="col-md-4">
+                        <div class="card product-card">
+                            <img src="/Resources/Images/shoes.jpeg">
+                            <div class="card-body text-center">
+                                <h5>Shoes</h5>
+                                <p>₹1,999</p>
+                                <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#Footwear2Cart">Add to
+                                    Cart</button>
+                                <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal"
+                                    data-bs-target="#Footwear2Details">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="col-md-4">
+                        <div class="card product-card">
+                            <img src="/Resources/Images/sneakers.jpeg">
+                            <div class="card-body text-center">
+                                <h5>Sneakers</h5>
+                                <p>₹2,499</p>
+                                <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#Footwear3Cart">Add to
+                                    Cart</button>
+                                <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal"
+                                    data-bs-target="#Footwear3Details">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                
+                </div>
+                
+                
+                <!-- Medical Section -->
+                
+                <h4 id="medical" class="mb-4">Medical Equipments</h4>
+                <div class="row g-4 mb-5">
+
+                    <div class="col-md-4">
+                        <div class="card product-card">
+                            <img src="/Resources/Images/medical.png">
+                            <div class="card-body text-center">
+                                <h5>Nebulizer</h5>
+                                <p>₹2,999</p>
+                                <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#Medical1Cart">Add to
+                                    Cart</button>
+                                <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal"
+                                    data-bs-target="#Medical1Details">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="col-md-4">
+                        <div class="card product-card">
+                            <img src="/Resources/Images/bpmonitor.jpeg" class="img-fluid">
+                            <div class="card-body text-center">
+                                <h5>BP Monitor</h5>
+                                <p>₹1,799</p>
+                                <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#Medical2Cart">Add to
+                                    Cart</button>
+                                <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal"
+                                    data-bs-target="#Medical2Details">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="col-md-4">
+                        <div class="card product-card">
+                            <img src="/Resources/Images/thermometer.jpeg" class="card-img-bottom">
+                            <div class="card-body text-center">
+                                <h5>Thermometer</h5>
+                                <p>₹399</p>
+                                <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#Medical3Cart">Add to
+                                    Cart</button>
+                                <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal"
+                                    data-bs-target="#Medical3Details">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                
+                </div>
+
             </div>
         </section>
         <!-- product section ended -->
 
 
     </main>
+
+
     <!-- footer section started -->
     <footer class="footer-gradient text-light pt-5 pb-4">
         <div class="container">
@@ -197,17 +798,17 @@
 
                 <!-- 1️⃣ LOGO + SITE NAME -->
                 <div class="col-md-3 mb-4">
-                           
-                
+
+
                     <!-- Logo -->
-                    <img src="/Resources/Icons/icon.png" class="img-fluid"  alt="FourSquare">
-                
+                    <img src="/Resources/Icons/icon.png" class="img-fluid" alt="FourSquare">
+
                     <!-- Tagline -->
                     <p class="footer-tagline">
                         Your Shopping, Our Team.<br>
                         One stop destination for fashion & electronics.
                     </p>
-                
+
                 </div>
 
                 <!-- 2️⃣ QUICK LINKS -->
@@ -243,7 +844,8 @@
                     <h6 class="footer-title">Contact</h6>
                     <p class="small mb-2">
                         <i class="bi bi-geo-alt me-2"></i>
-                        Fortune Cloud Technologies Private Limited,  7th Floor, Bramha Sky Uzuri,Pimpri Colony, Pimpri-Chinchwad<br>
+                        Fortune Cloud Technologies Private Limited, 7th Floor, Bramha Sky Uzuri,Pimpri Colony,
+                        Pimpri-Chinchwad<br>
                         Maharashtra, India - 411018
                     </p>
                     <p class="small mb-2">
@@ -274,6 +876,1237 @@
     </footer>
 
     <!-- footer section ended -->
+
+    <!-- Modal Section Started -->
+    <!-- ================= CLOTHING ================= -->
+    
+    <div class="modal fade" id="Clothing1Cart">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5>Men T-Shirt</h5><button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">Men T-Shirt added to cart.</div>
+                <div class="modal-footer"><button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <a href="cart.html" class="btn btn-primary">Go to Cart</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="Clothing1Details">
+        <div class="modal-dialog modal-fullscreen modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5>Men T-Shirt Details</h5><button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body container">
+                    <div class="row align-items-center">
+                        <div class="col-md-6"><img src="Resources/Images/Product4.webp" class="img-fluid"></div>
+                        <div class="col-md-6">
+                            <h2>Men T-Shirt</h2>
+                            <p class="fw-bold">₹799</p>
+                            <ul>
+                                <li>High Quality</li>
+                                <li>Best in Class</li>
+                                <li>Warranty Included</li>
+                            </ul>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Clothing1Cart">Add to
+                                Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="Clothing2Cart">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5>Women Dress</h5><button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">Women Dress added to cart.</div>
+                <div class="modal-footer"><button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <a href="cart.html" class="btn btn-primary">Go to Cart</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="Clothing2Details">
+        <div class="modal-dialog modal-fullscreen modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5>Women Dress Details</h5><button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body container">
+                    <div class="row align-items-center">
+                        <div class="col-md-6"><img src="Resources/Images/womendress.jpeg" class="img-fluid"></div>
+                        <div class="col-md-6">
+                            <h2>Women Dress</h2>
+                            <p class="fw-bold">₹1,299</p>
+                            <ul>
+                                <li>High Quality</li>
+                                <li>Best in Class</li>
+                                <li>Warranty Included</li>
+                            </ul>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Clothing2Cart">Add to
+                                Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="Clothing3Cart">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5>Kids Wear</h5><button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">Kids Wear added to cart.</div>
+                <div class="modal-footer"><button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <a href="cart.html" class="btn btn-primary">Go to Cart</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="Clothing3Details">
+        <div class="modal-dialog modal-fullscreen modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5>Kids Wear Details</h5><button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body container">
+                    <div class="row align-items-center">
+                        <div class="col-md-6"><img src="Resources/Images/kidsdress.jpeg" class="img-fluid"></div>
+                        <div class="col-md-6">
+                            <h2>Kids Wear</h2>
+                            <p class="fw-bold">₹599</p>
+                            <ul>
+                                <li>High Quality</li>
+                                <li>Best in Class</li>
+                                <li>Warranty Included</li>
+                            </ul>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Clothing3Cart">Add to
+                                Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Home Appliances -->
+    
+    <div class="modal fade" id="Home1Cart">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5>Refrigerator</h5><button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">Refrigerator added to cart.</div>
+                <div class="modal-footer"><button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <a href="cart.html" class="btn btn-primary">Go to Cart</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="Home1Details">
+        <div class="modal-dialog modal-fullscreen modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5>Refrigerator Details</h5><button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body container">
+                    <div class="row align-items-center">
+                        <div class="col-md-6"><img src="Resources/Images/fridge.jpeg" class="img-fluid"></div>
+                        <div class="col-md-6">
+                            <h2>Refrigerator</h2>
+                            <p class="fw-bold">₹14,999</p>
+                            <ul>
+                                <li>High Quality</li>
+                                <li>Best in Class</li>
+                                <li>Warranty Included</li>
+                            </ul>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Home1Cart">Add to
+                                Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="Home2Cart">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5>Washing Machine</h5><button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">Washing Machine added to cart.</div>
+                <div class="modal-footer"><button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <a href="cart.html" class="btn btn-primary">Go to Cart</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="Home2Details">
+        <div class="modal-dialog modal-fullscreen modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5>Washing Machine Details</h5><button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body container">
+                    <div class="row align-items-center">
+                        <div class="col-md-6"><img src="Resources/Images/washing.jpeg" class="img-fluid"></div>
+                        <div class="col-md-6">
+                            <h2>Washing Machine</h2>
+                            <p class="fw-bold">₹12,499</p>
+                            <ul>
+                                <li>High Quality</li>
+                                <li>Best in Class</li>
+                                <li>Warranty Included</li>
+                            </ul>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Home2Cart">Add to
+                                Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="Home3Cart">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5>Microwave Oven</h5><button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">Microwave Oven added to cart.</div>
+                <div class="modal-footer"><button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <a href="cart.html" class="btn btn-primary">Go to Cart</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="Home3Details">
+        <div class="modal-dialog modal-fullscreen modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5>Microwave Oven Details</h5><button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body container">
+                    <div class="row align-items-center">
+                        <div class="col-md-6"><img src="Resources/Images/microwave.jpeg" class="img-fluid"></div>
+                        <div class="col-md-6">
+                            <h2>Microwave Oven</h2>
+                            <p class="fw-bold">₹7,999</p>
+                            <ul>
+                                <li>High Quality</li>
+                                <li>Best in Class</li>
+                                <li>Warranty Included</li>
+                            </ul>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Home3Cart">Add to
+                                Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- toys -->
+    
+    <div class="modal fade" id="Toys1Cart">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5>Robot Toy</h5><button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">Robot Toy added to cart.</div>
+                <div class="modal-footer"><button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <a href="cart.html" class="btn btn-primary">Go to Cart</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="Toys1Details">
+        <div class="modal-dialog modal-fullscreen modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5>Robot Toy Details</h5><button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body container">
+                    <div class="row align-items-center">
+                        <div class="col-md-6"><img src="Resources/Images/toys.png" class="img-fluid"></div>
+                        <div class="col-md-6">
+                            <h2>Robot Toy</h2>
+                            <p class="fw-bold">₹699</p>
+                            <ul>
+                                <li>High Quality</li>
+                                <li>Best in Class</li>
+                                <li>Warranty Included</li>
+                            </ul>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Toys1Cart">Add to
+                                Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="Toys2Cart">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5>Remote Car</h5><button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">Remote Car added to cart.</div>
+                <div class="modal-footer"><button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <a href="cart.html" class="btn btn-primary">Go to Cart</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="Toys2Details">
+        <div class="modal-dialog modal-fullscreen modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5>Remote Car Details</h5><button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body container">
+                    <div class="row align-items-center">
+                        <div class="col-md-6"><img src="Resources/Images/remote.jpeg" class="img-fluid"></div>
+                        <div class="col-md-6">
+                            <h2>Remote Car</h2>
+                            <p class="fw-bold">₹999</p>
+                            <ul>
+                                <li>High Quality</li>
+                                <li>Best in Class</li>
+                                <li>Warranty Included</li>
+                            </ul>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Toys2Cart">Add to
+                                Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="Toys3Cart">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5>Building Blocks</h5><button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">Building Blocks added to cart.</div>
+                <div class="modal-footer"><button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <a href="cart.html" class="btn btn-primary">Go to Cart</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="Toys3Details">
+        <div class="modal-dialog modal-fullscreen modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5>Building Blocks Details</h5><button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body container">
+                    <div class="row align-items-center">
+                        <div class="col-md-6"><img src="Resources/Images/building.jpeg" class="img-fluid"></div>
+                        <div class="col-md-6">
+                            <h2>Building Blocks</h2>
+                            <p class="fw-bold">₹499</p>
+                            <ul>
+                                <li>High Quality</li>
+                                <li>Best in Class</li>
+                                <li>Warranty Included</li>
+                            </ul>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Toys3Cart">Add to
+                                Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Mobiles -->
+    
+    <div class="modal fade" id="Mobile1Cart">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5>Android Phone</h5><button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">Android Phone added to cart.</div>
+                <div class="modal-footer"><button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <a href="cart.html" class="btn btn-primary">Go to Cart</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="Mobile1Details">
+        <div class="modal-dialog modal-fullscreen modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5>Android Phone Details</h5><button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body container">
+                    <div class="row align-items-center">
+                        <div class="col-md-6"><img src="Resources/Images/mobile.png" class="img-fluid"></div>
+                        <div class="col-md-6">
+                            <h2>Android Phone</h2>
+                            <p class="fw-bold">₹9,999</p>
+                            <ul>
+                                <li>High Quality</li>
+                                <li>Best in Class</li>
+                                <li>Warranty Included</li>
+                            </ul>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Mobile1Cart">Add to
+                                Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="Mobile2Cart">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5>iPhone</h5><button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">iPhone added to cart.</div>
+                <div class="modal-footer"><button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <a href="cart.html" class="btn btn-primary">Go to Cart</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="Mobile2Details">
+        <div class="modal-dialog modal-fullscreen modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5>iPhone Details</h5><button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body container">
+                    <div class="row align-items-center">
+                        <div class="col-md-6"><img src="Resources/Images/iphone.jpeg" class="img-fluid"></div>
+                        <div class="col-md-6">
+                            <h2>iPhone</h2>
+                            <p class="fw-bold">₹59,999</p>
+                            <ul>
+                                <li>High Quality</li>
+                                <li>Best in Class</li>
+                                <li>Warranty Included</li>
+                            </ul>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Mobile2Cart">Add to
+                                Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="Mobile3Cart">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5>Feature Phone</h5><button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">Feature Phone added to cart.</div>
+                <div class="modal-footer"><button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <a href="cart.html" class="btn btn-primary">Go to Cart</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="Mobile3Details">
+        <div class="modal-dialog modal-fullscreen modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5>Feature Phone Details</h5><button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body container">
+                    <div class="row align-items-center">
+                        <div class="col-md-6"><img src="Resources/Images/feature.jpeg" class="img-fluid"></div>
+                        <div class="col-md-6">
+                            <h2>Feature Phone</h2>
+                            <p class="fw-bold">₹1,999</p>
+                            <ul>
+                                <li>High Quality</li>
+                                <li>Best in Class</li>
+                                <li>Warranty Included</li>
+                            </ul>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Mobile3Cart">Add to
+                                Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <!-- Electronics -->
+    
+    <div class="modal fade" id="Electronics1Cart">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5>Laptop</h5><button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">Laptop added to cart.</div>
+                <div class="modal-footer"><button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <a href="cart.html" class="btn btn-primary">Go to Cart</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="Electronics1Details">
+        <div class="modal-dialog modal-fullscreen modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5>Laptop Details</h5><button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body container">
+                    <div class="row align-items-center">
+                        <div class="col-md-6"><img src="Resources/Images/laptop.jpeg" class="img-fluid"></div>
+                        <div class="col-md-6">
+                            <h2>Laptop</h2>
+                            <p class="fw-bold">₹49,999</p>
+                            <ul>
+                                <li>High Quality</li>
+                                <li>Best in Class</li>
+                                <li>Warranty Included</li>
+                            </ul>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Electronics1Cart">Add to
+                                Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="Electronics2Cart">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5>Headphones</h5><button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">Headphones added to cart.</div>
+                <div class="modal-footer"><button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <a href="cart.html" class="btn btn-primary">Go to Cart</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="Electronics2Details">
+        <div class="modal-dialog modal-fullscreen modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5>Headphones Details</h5><button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body container">
+                    <div class="row align-items-center">
+                        <div class="col-md-6"><img src="Resources/Images/headphone.jpeg" class="img-fluid"></div>
+                        <div class="col-md-6">
+                            <h2>Headphones</h2>
+                            <p class="fw-bold">₹2,499</p>
+                            <ul>
+                                <li>High Quality</li>
+                                <li>Best in Class</li>
+                                <li>Warranty Included</li>
+                            </ul>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Electronics2Cart">Add to
+                                Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="Electronics3Cart">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5>Speaker</h5><button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">Speaker added to cart.</div>
+                <div class="modal-footer"><button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <a href="cart.html" class="btn btn-primary">Go to Cart</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="Electronics3Details">
+        <div class="modal-dialog modal-fullscreen modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5>Speaker Details</h5><button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body container">
+                    <div class="row align-items-center">
+                        <div class="col-md-6"><img src="Resources/Images/bluetooth.jpeg" class="img-fluid"></div>
+                        <div class="col-md-6">
+                            <h2>Speaker</h2>
+                            <p class="fw-bold">₹1,799</p>
+                            <ul>
+                                <li>High Quality</li>
+                                <li>Best in Class</li>
+                                <li>Warranty Included</li>
+                            </ul>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Electronics3Cart">Add to
+                                Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <!-- Beauty -->
+    
+    <div class="modal fade" id="Beauty1Cart">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5>Makeup Kit</h5><button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">Makeup Kit added to cart.</div>
+                <div class="modal-footer"><button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <a href="cart.html" class="btn btn-primary">Go to Cart</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="Beauty1Details">
+        <div class="modal-dialog modal-fullscreen modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5>Makeup Kit Details</h5><button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body container">
+                    <div class="row align-items-center">
+                        <div class="col-md-6"><img src="Resources/Images/beauty.png" class="img-fluid"></div>
+                        <div class="col-md-6">
+                            <h2>Makeup Kit</h2>
+                            <p class="fw-bold">₹999</p>
+                            <ul>
+                                <li>High Quality</li>
+                                <li>Best in Class</li>
+                                <li>Warranty Included</li>
+                            </ul>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Beauty1Cart">Add to
+                                Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="Beauty2Cart">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5>Face Cream</h5><button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">Face Cream added to cart.</div>
+                <div class="modal-footer"><button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <a href="cart.html" class="btn btn-primary">Go to Cart</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="Beauty2Details">
+        <div class="modal-dialog modal-fullscreen modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5>Face Cream Details</h5><button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body container">
+                    <div class="row align-items-center">
+                        <div class="col-md-6"><img src="Resources/Images/facecream.jpeg" class="img-fluid"></div>
+                        <div class="col-md-6">
+                            <h2>Face Cream</h2>
+                            <p class="fw-bold">₹499</p>
+                            <ul>
+                                <li>High Quality</li>
+                                <li>Best in Class</li>
+                                <li>Warranty Included</li>
+                            </ul>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Beauty2Cart">Add to
+                                Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="Beauty3Cart">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5>Perfume</h5><button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">Perfume added to cart.</div>
+                <div class="modal-footer"><button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <a href="cart.html" class="btn btn-primary">Go to Cart</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="Beauty3Details">
+        <div class="modal-dialog modal-fullscreen modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5>Perfume Details</h5><button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body container">
+                    <div class="row align-items-center">
+                        <div class="col-md-6"><img src="Resources/Images/perfumes.jpeg" class="img-fluid"></div>
+                        <div class="col-md-6">
+                            <h2>Perfume</h2>
+                            <p class="fw-bold">₹1,299</p>
+                            <ul>
+                                <li>High Quality</li>
+                                <li>Best in Class</li>
+                                <li>Warranty Included</li>
+                            </ul>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Beauty3Cart">Add to
+                                Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <!-- Sports -->
+    
+    <div class="modal fade" id="Sports1Cart">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5>Cricket Balls</h5><button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">Cricket Ball added to cart.</div>
+                <div class="modal-footer"><button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <a href="cart.html" class="btn btn-primary">Go to Cart</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="Sports1Details">
+        <div class="modal-dialog modal-fullscreen modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5>Cricket Balls Details</h5><button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body container">
+                    <div class="row align-items-center">
+                        <div class="col-md-6"><img src="Resources/Images/sports.png" class="img-fluid"></div>
+                        <div class="col-md-6">
+                            <h2>Cricket Balls</h2>
+                            <p class="fw-bold">₹1,499</p>
+                            <ul>
+                                <li>High Quality</li>
+                                <li>Best in Class</li>
+                                <li>Warranty Included</li>
+                            </ul>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Sports1Cart">Add to
+                                Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="Sports2Cart">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5>Football</h5><button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">Football added to cart.</div>
+                <div class="modal-footer"><button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <a href="cart.html" class="btn btn-primary">Go to Cart</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="Sports2Details">
+        <div class="modal-dialog modal-fullscreen modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5>Football Details</h5><button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body container">
+                    <div class="row align-items-center">
+                        <div class="col-md-6"><img src="Resources/Images/football.jpeg" class="img-fluid"></div>
+                        <div class="col-md-6">
+                            <h2>Football</h2>
+                            <p class="fw-bold">₹699</p>
+                            <ul>
+                                <li>High Quality</li>
+                                <li>Best in Class</li>
+                                <li>Warranty Included</li>
+                            </ul>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Sports2Cart">Add to
+                                Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="Sports3Cart">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5>Tennis Kit</h5><button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">Tennis Kit added to cart.</div>
+                <div class="modal-footer"><button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <a href="cart.html" class="btn btn-primary">Go to Cart</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="Sports3Details">
+        <div class="modal-dialog modal-fullscreen modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5>Tennis Kit Details</h5><button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body container">
+                    <div class="row align-items-center">
+                        <div class="col-md-6"><img src="Resources/Images/tennis.jpeg" class="img-fluid"></div>
+                        <div class="col-md-6">
+                            <h2>Tennis Kit</h2>
+                            <p class="fw-bold">₹899</p>
+                            <ul>
+                                <li>High Quality</li>
+                                <li>Best in Class</li>
+                                <li>Warranty Included</li>
+                            </ul>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Sports3Cart">Add to
+                                Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <!-- Watches -->
+    
+    <div class="modal fade" id="Watches1Cart">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5>Analog Watch</h5><button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">Analog Watch added to cart.</div>
+                <div class="modal-footer"><button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <a href="cart.html" class="btn btn-primary">Go to Cart</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="Watches1Details">
+        <div class="modal-dialog modal-fullscreen modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5>Analog Watch Details</h5><button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body container">
+                    <div class="row align-items-center">
+                        <div class="col-md-6"><img src="Resources/Images/watches.png" class="img-fluid"></div>
+                        <div class="col-md-6">
+                            <h2>Analog Watch</h2>
+                            <p class="fw-bold">₹1,999</p>
+                            <ul>
+                                <li>High Quality</li>
+                                <li>Best in Class</li>
+                                <li>Warranty Included</li>
+                            </ul>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Watches1Cart">Add to
+                                Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="Watches2Cart">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5>Smart Watch</h5><button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">Smart Watch added to cart.</div>
+                <div class="modal-footer"><button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <a href="cart.html" class="btn btn-primary">Go to Cart</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="Watches2Details">
+        <div class="modal-dialog modal-fullscreen modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5>Smart Watch Details</h5><button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body container">
+                    <div class="row align-items-center">
+                        <div class="col-md-6"><img src="Resources/Images/smartwatch.jpeg" class="img-fluid"></div>
+                        <div class="col-md-6">
+                            <h2>Smart Watch</h2>
+                            <p class="fw-bold">₹3,999</p>
+                            <ul>
+                                <li>High Quality</li>
+                                <li>Best in Class</li>
+                                <li>Warranty Included</li>
+                            </ul>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Watches2Cart">Add to
+                                Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="Watches3Cart">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5>Luxury Watch</h5><button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">Luxury Watch added to cart.</div>
+                <div class="modal-footer"><button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <a href="cart.html" class="btn btn-primary">Go to Cart</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="Watches3Details">
+        <div class="modal-dialog modal-fullscreen modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5>Luxury Watch Details</h5><button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body container">
+                    <div class="row align-items-center">
+                        <div class="col-md-6"><img src="Resources/Images/luxury.jpeg" class="img-fluid"></div>
+                        <div class="col-md-6">
+                            <h2>Luxury Watch</h2>
+                            <p class="fw-bold">₹9,999</p>
+                            <ul>
+                                <li>High Quality</li>
+                                <li>Best in Class</li>
+                                <li>Warranty Included</li>
+                            </ul>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Watches3Cart">Add to
+                                Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Footwear -->
+    
+    <div class="modal fade" id="Footwear1Cart">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5>Sandals</h5><button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">Sandals added to cart.</div>
+                <div class="modal-footer"><button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <a href="cart.html" class="btn btn-primary">Go to Cart</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="Footwear1Details">
+        <div class="modal-dialog modal-fullscreen modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5>Sandals Details</h5><button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body container">
+                    <div class="row align-items-center">
+                        <div class="col-md-6"><img src="Resources/Images/footwear.png" class="img-fluid"></div>
+                        <div class="col-md-6">
+                            <h2>Sandals</h2>
+                            <p class="fw-bold">₹999</p>
+                            <ul>
+                                <li>High Quality</li>
+                                <li>Best in Class</li>
+                                <li>Warranty Included</li>
+                            </ul>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Footwear1Cart">Add to
+                                Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="Footwear2Cart">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5>Shoes</h5><button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">Shoes added to cart.</div>
+                <div class="modal-footer"><button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <a href="cart.html" class="btn btn-primary">Go to Cart</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="Footwear2Details">
+        <div class="modal-dialog modal-fullscreen modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5>Shoes Details</h5><button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body container">
+                    <div class="row align-items-center">
+                        <div class="col-md-6"><img src="Resources/Images/shoes.jpeg" class="img-fluid"></div>
+                        <div class="col-md-6">
+                            <h2>Shoes</h2>
+                            <p class="fw-bold">₹1,999</p>
+                            <ul>
+                                <li>High Quality</li>
+                                <li>Best in Class</li>
+                                <li>Warranty Included</li>
+                            </ul>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Footwear2Cart">Add to
+                                Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="Footwear3Cart">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5>Sneakers</h5><button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">Sneakers added to cart.</div>
+                <div class="modal-footer"><button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <a href="cart.html" class="btn btn-primary">Go to Cart</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="Footwear3Details">
+        <div class="modal-dialog modal-fullscreen modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5>Sneakers Details</h5><button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body container">
+                    <div class="row align-items-center">
+                        <div class="col-md-6"><img src="Resources/Images/sneakers.jpeg" class="img-fluid"></div>
+                        <div class="col-md-6">
+                            <h2>Sneakers</h2>
+                            <p class="fw-bold">₹2,499</p>
+                            <ul>
+                                <li>High Quality</li>
+                                <li>Best in Class</li>
+                                <li>Warranty Included</li>
+                            </ul>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Footwear3Cart">Add to
+                                Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <!-- Meidcal -->
+    
+    <div class="modal fade" id="Medical1Cart">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5>Nebulizer</h5><button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">Nebulizer added to cart.</div>
+                <div class="modal-footer"><button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <a href="cart.html" class="btn btn-primary">Go to Cart</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="Medical1Details">
+        <div class="modal-dialog modal-fullscreen modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5>Nebulizer Details</h5><button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body container">
+                    <div class="row align-items-center">
+                        <div class="col-md-6"><img src="Resources/Images/medical.png" class="img-fluid"></div>
+                        <div class="col-md-6">
+                            <h2>Nebulizer</h2>
+                            <p class="fw-bold">₹2,999</p>
+                            <ul>
+                                <li>High Quality</li>
+                                <li>Best in Class</li>
+                                <li>Warranty Included</li>
+                            </ul>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Medical1Cart">Add to
+                                Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="Medical2Cart">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5>BP Monitor</h5><button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">BP Monitor added to cart.</div>
+                <div class="modal-footer"><button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <a href="cart.html" class="btn btn-primary">Go to Cart</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="Medical2Details">
+        <div class="modal-dialog modal-fullscreen modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5>BP Monitor Details</h5><button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body container">
+                    <div class="row align-items-center">
+                        <div class="col-md-6"><img src="Resources/Images/bpmonitor.jpeg" class="img-fluid"></div>
+                        <div class="col-md-6">
+                            <h2>BP Monitor</h2>
+                            <p class="fw-bold">₹1,799</p>
+                            <ul>
+                                <li>High Quality</li>
+                                <li>Best in Class</li>
+                                <li>Warranty Included</li>
+                            </ul>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Medical2Cart">Add to
+                                Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="Medical3Cart">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5>Thermometer</h5><button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">Thermometer added to cart.</div>
+                <div class="modal-footer"><button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <a href="cart.html" class="btn btn-primary">Go to Cart</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="Medical3Details">
+        <div class="modal-dialog modal-fullscreen modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5>Thermometer Details</h5><button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body container">
+                    <div class="row align-items-center">
+                        <div class="col-md-6"><img src="Resources/Images/thermometer.jpeg" class="img-fluid"></div>
+                        <div class="col-md-6">
+                            <h2>Thermometer</h2>
+                            <p class="fw-bold">₹399</p>
+                            <ul>
+                                <li>High Quality</li>
+                                <li>Best in Class</li>
+                                <li>Warranty Included</li>
+                            </ul>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Medical3Cart">Add to
+                                Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal Section Ended -->
+
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"

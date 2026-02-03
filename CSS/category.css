@@ -1,0 +1,31 @@
+.category-link {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .category-card {
+      border: none;
+      text-align: center;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .category-card img {
+      height: 140px;
+      object-fit: contain; /* prevents stretching */
+      transition: transform 0.3s ease;
+    }
+
+    .category-card:hover {
+      transform: translateY(-8px);
+    }
+
+    .category-card:hover img {
+      transform: scale(1.08);
+    }
+
+    .category-title {
+      margin-top: 12px;
+      font-weight: 600;
+      font-size: 1.05rem;
+    }

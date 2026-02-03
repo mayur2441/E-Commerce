@@ -1,0 +1,39 @@
+/* Sidebar */
+    .filter-box {
+      border: 1px solid #ddd;
+      padding: 20px;
+      border-radius: 8px;
+    }
+
+    .filter-box h5 {
+      font-weight: 600;
+      margin-bottom: 15px;
+    }
+
+    /* Product card */
+    .product-card {
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 15px;
+      height: 100%;
+      transition: all 0.3s ease;
+    }
+
+    .product-card:hover {
+      box-shadow: 0 10px 20px rgba(0,0,0,0.12);
+      transform: translateY(-5px);
+    }
+
+    .product-card img {
+      height: 180px;
+      object-fit: contain;
+      margin-bottom: 10px;
+    }
+
+    .product-title {
+      font-weight: 600;
+    }
+
+    .product-price {
+      font-weight: 500;
+    }

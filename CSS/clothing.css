@@ -37,3 +37,36 @@
     .product-price {
       font-weight: 500;
     }
+
+    .category-tabs-wrapper {
+  background: #f8f9fa;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.category-tabs {
+  padding: 10px 0;
+  gap: 10px;
+}
+
+.category-tabs .nav-link {
+  color: #333;
+  background: #fff;
+  border-radius: 20px;
+  padding: 8px 18px;
+  font-weight: 500;
+  white-space: nowrap;
+  border: 1px solid #ddd;
+  transition: all 0.3s ease;
+}
+
+.category-tabs .nav-link:hover {
+  background: #0d6efd;
+  color: #fff;
+  border-color: #0d6efd;
+}
+
+.category-tabs .nav-link.active {
+  background: #0d6efd;
+  color: #fff;
+  border-color: #0d6efd;
+}

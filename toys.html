@@ -17,7 +17,7 @@
 <body>
     <header>
         <!-- header with navigation bar -->
-         <nav class="navbar navbar-expand-lg navbar-gradient" data-bs-theme="dark">
+         <nav class="navbar navbar-expand-lg navbar-gradient fixed-top" data-bs-theme="dark">
 
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html">
@@ -81,256 +81,13 @@
         </nav>
     </header>
 
-    <!-- CATEGORY TABS -->
-    <div class="category-tabs-wrapper ">
-        <div class="container-fluid align-items-center">
-            <ul class="nav nav-pills category-tabs flex-nowrap overflow-auto">
-    
-                <li class="nav-item">
-                    <a class="nav-link" href="clothing.html">Clothing</a>
-                </li>
-    
-                <li class="nav-item">
-                    <a class="nav-link" href="home_appliances.html">Home Appliances</a>
-                </li>
-    
-                <li class="nav-item">
-                    <a class="nav-link active" href="toys.html">Toys</a>
-                </li>
-    
-                <li class="nav-item">
-                    <a class="nav-link" href="mobiles.html">Mobile</a>
-                </li>
-    
-                <li class="nav-item">
-                    <a class="nav-link" href="electronics.html">Electronics</a>
-                </li>
-    
-                <li class="nav-item">
-                    <a class="nav-link" href="beauty.html">Beauty</a>
-                </li>
-    
-                <li class="nav-item">
-                    <a class="nav-link" href="sports.html">Sports</a>
-                </li>
-    
-                <li class="nav-item">
-                    <a class="nav-link" href="watches.html">Watches</a>
-                </li>
-    
-                <li class="nav-item">
-                    <a class="nav-link" href="footwear.html">Footwear</a>
-                </li>
-    
-                <li class="nav-item">
-                    <a class="nav-link" href="medical.html">Medical</a>
-                </li>
-    
-            </ul>
-        </div>
-    </div>
-    <!-- main section started -->
-    <main>
+   <!-- main section started -->
+     <main>
         <section class="container mt-3">
-            <h1>Toys</h1>
-            <div class="container-fluid my-4">
-                <div class="row">
-        
-                    <!-- LEFT FILTER PANEL -->
-                    <div class="col-lg-3 col-md-4 mb-4 mt-4">
-                        <div class="filter-box">
-        
-                            <div class="filter-header pb-2">
-                                <i class="bi bi-funnel"></i>
-                                <span ><strong>Filters</strong><span>
-                            </div>
-        
-                            <!-- Category -->
-                            <div class="mb-4">
-                                <strong>Category</strong>
-                            
-                                <div class="form-check mt-2">
-                                    <input class="form-check-input" type="checkbox" id="catClothing" >
-                                    <label class="form-check-label" for="catClothing">Clothing</label>
-                                </div>
-                            
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" id="catHome">
-                                    <label class="form-check-label" for="catHome">Home Appliances</label>
-                                </div>
-                            
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" id="catToys" checked>
-                                    <label class="form-check-label" for="catToys">Toys</label>
-                                </div>
-                            
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" id="catMobile">
-                                    <label class="form-check-label" for="catMobile">Mobile</label>
-                                </div>
-                            
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" id="catElectronics" >
-                                    <label class="form-check-label" for="catElectronics">Electronics</label>
-                                </div>
-                            
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" id="catBeauty">
-                                    <label class="form-check-label" for="catBeauty">Beauty</label>
-                                </div>
-                            
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" id="catSports">
-                                    <label class="form-check-label" for="catSports">Sports</label>
-                                </div>
-                            
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" id="catWatches">
-                                    <label class="form-check-label" for="catWatches">Watches</label>
-                                </div>
-                            
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" id="catFootwear">
-                                    <label class="form-check-label" for="catFootwear">Footwear</label>
-                                </div>
-                            
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" id="catMedical">
-                                    <label class="form-check-label" for="catMedical">Medical Equipments</label>
-                                </div>
-                            </div>
-        
-                            <!-- Price -->
-        
+            <h1>Toy Products</h1>
+            <div class="container-fluid my-4" >
+                <div class="row" id="toys">
 
-
-                            <div class="mb-4">
-                                <strong>Price Range</strong>
-                                <div class="form-check mt-2">
-                                    <input class="form-check-input" type="checkbox">
-                                    <label class="form-check-label">$0 – $50</label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox">
-                                    <label class="form-check-label">$50 – $100</label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox">
-                                    <label class="form-check-label">$100+</label>
-                                </div>
-                            </div>
-
-                            <!-- RATING -->
-                            <div class="filter-section">
-                                <h6>Rating</h6>
-                            
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" id="rating4">
-                                    <label class="form-check-label" for="rating4">4+ Stars</label>
-                                </div>
-                            
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" id="rating3">
-                                    <label class="form-check-label" for="rating3">3+ Stars</label>
-                                </div>
-                            
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" id="rating2">
-                                    <label class="form-check-label" for="rating2">2+ Stars</label>
-                                </div>
-                            
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" id="rating1">
-                                    <label class="form-check-label" for="rating1">1+ Stars</label>
-                                </div>
-                            </div>
-        
-                            <button class="btn btn-outline-dark w-100 mt-3 reset-btn">
-                                <i class="bi bi-x-lg me-1"></i> Reset Filters
-                            </button>
-                        </div>
-                    </div>
-        
-                    <!-- RIGHT  -->
-                    <div class="col-lg-9 col-md-8">
-        
-                        <h4 class="mb-4"></h4>
-        
-                        <div class="row g-4">
-        
-                            <!-- Product 1 -->
-                            <div class="col-lg-4 col-md-6">
-                                <div class="product-card">
-                                    <img src="./Resources/Images/cloths.png" class="img-fluid" alt="">
-                                    <div class="product-title">Product Name 1</div>
-                                    <div class="product-price">$99.99</div>
-                                </div>
-                            </div>
-        
-                            <!-- Product 2 -->
-                            <div class="col-lg-4 col-md-6">
-                                <div class="product-card">
-                                    <img src="./Resources/Images/cloths.png" class="img-fluid" alt="">
-                                    <div class="product-title">Product Name 2</div>
-                                    <div class="product-price">$99.99</div>
-                                </div>
-                            </div>
-        
-                            <!-- Product 3 -->
-                            <div class="col-lg-4 col-md-6">
-                                <div class="product-card">
-                                    <img src="./Resources/Images/cloths.png" class="img-fluid" alt="">
-                                    <div class="product-title">Product Name 3</div>
-                                    <div class="product-price">$99.99</div>
-                                </div>
-                            </div>
-        
-                            <!-- Product 4 -->
-                            <div class="col-lg-4 col-md-6">
-                                <div class="product-card">
-                                    <img src="./Resources/Images/cloths.png" class="img-fluid" alt="">
-                                    <div class="product-title">Product Name 4</div>
-                                    <div class="product-price">$99.99</div>
-                                </div>
-                            </div>
-        
-                            <!-- Product 5 -->
-                            <div class="col-lg-4 col-md-6">
-                                <div class="product-card">
-                                    <img src="./Resources/Images/cloths.png" class="img-fluid" alt="">
-                                    <div class="product-title">Product Name 5</div>
-                                    <div class="product-price">$99.99</div>
-                                </div>
-                            </div>
-        
-                            <!-- Product 6 -->
-                            <div class="col-lg-4 col-md-6">
-                                <div class="product-card">
-                                    <img src="./Resources/Images/cloths.png" class="img-fluid" alt="">
-                                    <div class="product-title">Product Name 6</div>
-                                    <div class="product-price">$99.99</div>
-                                </div>
-                            </div>
-
-                            <nav aria-label="...">
-                                <ul class="pagination">
-                                    <li class="page-item disabled">
-                                        <a class="page-link">Previous</a>
-                                    </li>
-                                    <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                    <li class="page-item active">
-                                        <a class="page-link" href="#" aria-current="page">2</a>
-                                    </li>
-                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                    <li class="page-item">
-                                        <a class="page-link" href="#">Next</a>
-                                    </li>
-                                </ul>
-                            </nav>
-        
-                        </div>
-                    </div>
-        
                 </div>
             </div>
         </section>
@@ -420,6 +177,7 @@
 
     <!-- footer section ended -->
 
+    <script src="./js/toys.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>

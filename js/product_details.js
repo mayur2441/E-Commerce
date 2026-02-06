@@ -46,8 +46,9 @@ document.getElementById("productDetails").innerHTML = `
     <p class="text-muted">Inclusive of all taxes</p>
 
     <!-- OFFERS -->
-    <h6>Offers</h6>
-    <div class="row">
+    
+    <img src="./Resources/Icons/offer.png" style="height: 40px; width: 40px;"><strong> Offers</strong></img>
+    <div class="row"> 
       ${product.offers.map(offer => `
         <div class="col-6 mb-2">
           <div class="border p-2 rounded small">

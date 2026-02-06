@@ -783,9 +783,9 @@ const medical_products = [
 
 //const clothing = document.getElementById("products");
 
-const beauty1 = document.getElementById("beauty");
+const clothing1 = document.getElementById("clothing");
 renderProducts(clothing_products, clothing1);
-renderProducts(beauty_products, beauty1);
+
 
 function renderProducts(products,containers){
     return products.forEach(product => {

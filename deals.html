@@ -16,7 +16,7 @@
 <body>
     <header>
         <!-- header with navigation bar -->
-        <nav class="navbar navbar-expand-lg navbar-gradient" data-bs-theme="dark">
+        <nav class="navbar navbar-expand-lg navbar-gradient fixed-top" data-bs-theme="dark">
 
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html">
@@ -85,14 +85,15 @@
         <!-- section started from Here  -->
         <section class="">
             <div class="container-fluid mt-3 pb-4">
-                <div class="row">
-
-                        <div class="mb-3">
+                 <div class="mb-3">
                             <h2 class="text-dark"><b>Hot Deals</b></h2>
                         <p class="text-secondary">Limited time offers and special discounts</p>
                         </div>
+                <div class="row" id="hotDealsContainer">
 
-                    <!-- card one start  -->
+                       
+
+                    <!--
                        <div class="col-md-3">
                         
                         <div class="card position-relative card-hover " style="width: 21rem;">
@@ -132,10 +133,7 @@
                         </div>
                     
                     </div>
-                    <!-- card one ends  -->
-
-
-                    <!-- card two start  -->
+                  
                        <div class="col-md-3">
                         
                         <div class="card position-relative card-hover " style="width: 21rem;">
@@ -175,10 +173,7 @@
                         </div>
                        
                     </div> 
-                    <!-- card two ends  -->
-
-
-                     <!-- card three start  -->
+                  
 
                        <div class="col-md-3">
                         
@@ -219,6 +214,7 @@
                         </div>
                     
                     </div>
+                -->
                     <!-- card three ends  -->
 
                 </div>
@@ -312,7 +308,9 @@
         </div>
     </footer>
 
+
     <!-- footer section ended -->
+<script src="./js/deals.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"

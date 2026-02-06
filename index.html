@@ -17,7 +17,7 @@
 <body>
     <header>
         <!-- header with navigation bar -->
-         <nav class="navbar navbar-expand-lg navbar-gradient" data-bs-theme="dark">
+         <nav class="navbar navbar-expand-lg navbar-gradient fixed-top" data-bs-theme="dark">
 
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html">
@@ -366,588 +366,50 @@
                     <p class="text-secondary fs-6">Handpicked items just for you</p>
                     
                 </div>
-                <h4 id="clothing" class="mb-4">Clothing</h4>
-                <div  class="row g-4 mb-5">
+                <h4 class="mb-4">Clothing</h4>
+                <div class="row g-4 mb-5" id="clothing"></div>
 
-                    <!-- Product 1 -->
-                    <div class="col-md-4 ">
-                        <div class="card product-card h-100 border rounded-4 overflow-hidden">
-                            <div class="position-relative">
-                                <img src="./Resources/Images/Product4.webp" class="card-img-top" alt="Women Dress">
-                    
-                                <!-- BADGES -->
-                                <span class="badge bg-primary position-absolute top-0 start-0 m-3 px-3 py-2">
-                                    Best Seller
-                                </span>
-                    
-                                <span class="badge bg-danger position-absolute top-0 end-0 m-3 px-3 py-2">
-                                    Save $100.00
-                                </span>
-                            </div>
-                            <div class="card-body">
-                                 <p class="text-secondary fs-6">Clothing</p>
-                                <h5 class="fw-bold mb-2">
-                                    Mens T-Shirt
-                                </h5>
-                                <!-- RATINGS -->
-                                <div class="d-flex align-items-center mb-3">
-                                    <i class="bi bi-star-fill text-warning"></i>
-                                    <i class="bi bi-star-fill text-warning"></i>
-                                    <i class="bi bi-star-fill text-warning"></i>
-                                    <i class="bi bi-star-fill text-warning"></i>
-                                    <i class="bi bi-star text-secondary"></i>
-                                    <span class="text-muted ms-2">(128)</span>
-                                </div>
-                    
-                                <!-- PRICE -->
-                                <div class="mb-4">
-                                    <span class="fs-4 fw-bold">₹799.99</span>
-                                    <span class="text-muted text-decoration-line-through ms-2">
-                                        ₹899.99
-                                    </span>
-                                </div>
-                                <a class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#Clothing3Cart">Add to Cart</a>
-                                <a class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#Clothing3Details">View
-                                    Details</a>
-                            </div>
-                        </div>
-                    </div>
+                <h4  class="mb-4">Home Appliances</h4>
+                <div  class="row g-4 mb-5" id="home_appliances"></div>
 
-                    
-
-
-                    <!-- Product 2 -->
-                    
-
-                    <div class="col-md-4 ">
-                        <div class="card product-card h-100 border rounded-4 overflow-hidden">
-                            <div class="position-relative">
-                                <img src="./Resources/Images/womendress.jpeg" class="card-img-top" alt="Women Dress">
-                    
-                                <!-- BADGES -->
-                                <span class="badge bg-primary position-absolute top-0 start-0 m-3 px-3 py-2">
-                                    Best Seller
-                                </span>
-                    
-                                <span class="badge bg-danger position-absolute top-0 end-0 m-3 px-3 py-2">
-                                    Save $100.00
-                                </span>
-                            </div>
-                            <div class="card-body">
-                                <p class="text-secondary fs-6">Clothing</p>
-                                <h5 class="fw-bold mb-2">
-                                    Womens Dress
-                                </h5>
-                                <!-- RATINGS -->
-                                <div class="d-flex align-items-center mb-3">
-                                    <i class="bi bi-star-fill text-warning"></i>
-                                    <i class="bi bi-star-fill text-warning"></i>
-                                    <i class="bi bi-star-fill text-warning"></i>
-                                    <i class="bi bi-star-fill text-warning"></i>
-                                    <i class="bi bi-star text-secondary"></i>
-                                    <span class="text-muted ms-2">(128)</span>
-                                </div>
-                    
-                                <!-- PRICE -->
-                                <div class="mb-4">
-                                    <span class="fs-4 fw-bold">₹1,299.99</span>
-                                    <span class="text-muted text-decoration-line-through ms-2">
-                                        ₹1,399.99
-                                    </span>
-                                </div>
-                                <a class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#Clothing3Cart">Add to Cart</a>
-                                <a class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#Clothing3Details">View
-                                    Details</a>
-                            </div>
-                        </div>
-                    </div>
-
-                     
-
-                    <!-- Product 3 -->
-                    <div class="col-md-4">
-                        <div class="card product-card h-100  border rounded-4 overflow-hidden">
-                            <div class="position-relative">
-                                <img src="./Resources/Images/kidsdress.jpeg" class="card-img-top" alt="Women Dress">
-                    
-                                <!-- BADGES -->
-                                <span class="badge bg-primary position-absolute top-0 start-0 m-3 px-3 py-2">
-                                    Best Seller
-                                </span>
-                    
-                                <span class="badge bg-danger position-absolute top-0 end-0 m-3 px-3 py-2">
-                                    Save $100.00
-                                </span>
-                            </div>
-                            <div class="card-body">
-                                <p class="text-secondary fs-6">Clothing</p>
-                                <h5 class="fw-bold mb-2">
-                                    Girls Dress
-                                </h5>
-                                <!-- RATINGS -->
-                                <div class="d-flex align-items-center mb-3">
-                                    <i class="bi bi-star-fill text-warning"></i>
-                                    <i class="bi bi-star-fill text-warning"></i>
-                                    <i class="bi bi-star-fill text-warning"></i>
-                                    <i class="bi bi-star-fill text-warning"></i>
-                                    <i class="bi bi-star text-secondary"></i>
-                                    <span class="text-muted ms-2">(128)</span>
-                                </div>
-                    
-                                <!-- PRICE -->
-                                <div class="mb-4">
-                                    <span class="fs-4 fw-bold">₹599.99</span>
-                                    <span class="text-muted text-decoration-line-through ms-2">
-                                        ₹699.99
-                                    </span>
-                                </div>
-                                <a class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#Clothing3Cart">Add to Cart</a>
-                                <a class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#Clothing3Details">View
-                                    Details</a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                </div>
-
-                <h4 id="home_appliances" class="mb-4">Home Appliances</h4>
-                <div  class="row g-4 mb-5">
-                
-                    <div class="col-md-4">
-                        <div class="card product-card">
-                            <img src="./Resources/Images/fridge.jpeg">
-                            <div class="card-body text-center">
-                                <h5>Refrigerator</h5>
-                                <p>₹14,999</p>
-                                <a class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#Home1Cart">Add to Cart</a>
-                                <a class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#Home1Details">View
-                                    Details</a>
-                            </div>
-                        </div>
-                    </div>
-                
-                    <div class="col-md-4">
-                        <div class="card product-card">
-                            <img src="./Resources/Images/washing.jpeg">
-                            <div class="card-body text-center">
-                                <h5>Washing Machine</h5>
-                                <p>₹12,499</p>
-                                <a class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#Home2Cart">Add to Cart</a>
-                                <a class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#Home2Details">View
-                                    Details</a>
-                            </div>
-                        </div>
-                    </div>
-                
-                    <div class="col-md-4">
-                        <div class="card product-card">
-                            <img src="./Resources/Images/microwave.jpeg">
-                            <div class="card-body text-center">
-                                <h5>Microwave Oven</h5>
-                                <p>₹7,999</p>
-                                <a class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#Home3Cart">Add to Cart</a>
-                                <a class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#Home3Details">View
-                                    Details</a>
-                            </div>
-                        </div>
-                    </div>
-                
-                </div>
-
-                <!-- ================================================= -->
-                <!-- TOYS -->
-                <!-- ================================================= -->
-                <h4 id="toys" class="mb-4">Toys</h4>
-                <div class="row g-4 mb-5">
-
-                    <div class="col-md-4">
-                        <div class="card product-card">
-                            <img src="./Resources/Images/toys.png">
-                            <div class="card-body text-center">
-                                <h5>Robot Toy</h5>
-                                <p>₹699</p>
-                                <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#Toys1Cart">Add to
-                                    Cart</button>
-                                <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal"
-                                    data-bs-target="#Toys1Details">View Details</button>
-                            </div>
-                        </div>
-                    </div>
-                
-                    <div class="col-md-4">
-                        <div class="card product-card">
-                            <img src="./Resources/Images/remote.jpeg">
-                            <div class="card-body text-center">
-                                <h5>Remote Car</h5>
-                                <p>₹999</p>
-                                <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#Toys2Cart">Add to
-                                    Cart</button>
-                                <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal"
-                                    data-bs-target="#Toys2Details">View Details</button>
-                            </div>
-                        </div>
-                    </div>
-                
-                    <div class="col-md-4">
-                        <div class="card product-card">
-                            <img src="./Resources/Images/building.jpeg">
-                            <div class="card-body text-center">
-                                <h5>Building Blocks</h5>
-                                <p>₹499</p>
-                                <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#Toys3Cart">Add to
-                                    Cart</button>
-                                <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal"
-                                    data-bs-target="#Toys3Details">View Details</button>
-                            </div>
-                        </div>
-                    </div>
-                
-                </div>
+                <h4  class="mb-4">Toys</h4>
+                <div class="row g-4 mb-5" id="toys"></div>
 
                 <!-- Mobile Section -->
-                <h4 id="mobile" class="mb-4">Mobile</h4>
-                <div  class="row g-4 mb-5">
-                
-                    <div class="col-md-4">
-                        <div class="card product-card">
-                            <img src="./Resources/Images/mobile.png">
-                            <div class="card-body text-center">
-                                <h5>Android Phone</h5>
-                                <p>₹9,999</p>
-                                <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#Mobile1Cart">Add to
-                                    Cart</button>
-                                <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal"
-                                    data-bs-target="#Mobile1Details">View Details</button>
-                            </div>
-                        </div>
-                    </div>
-                
-                    <div class="col-md-4">
-                        <div class="card product-card">
-                            <img src="./Resources/Images/iphone.jpeg">
-                            <div class="card-body text-center">
-                                <h5>iPhone</h5>
-                                <p>₹59,999</p>
-                                <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#Mobile2Cart">Add to
-                                    Cart</button>
-                                <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal"
-                                    data-bs-target="#Mobile2Details">View Details</button>
-                            </div>
-                        </div>
-                    </div>
-                
-                    <div class="col-md-4">
-                        <div class="card product-card">
-                            <img src="./Resources/Images/feature.jpeg">
-                            <div class="card-body text-center">
-                                <h5>Feature Phone</h5>
-                                <p>₹1,999</p>
-                                <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#Mobile3Cart">Add to
-                                    Cart</button>
-                                <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal"
-                                    data-bs-target="#Mobile3Details">View Details</button>
-                            </div>
-                        </div>
-                    </div>
-                
-                </div>
+                <h4  class="mb-4">Mobile</h4>
+                <div  class="row g-4 mb-5" id="mobile"></div>
                 
                 
                 <!-- Electronics Section -->
-                <h4 id="electronics" class="mb-4">Electronics</h4>
-                <div  class="row g-4 mb-5">
-
-                    <div class="col-md-4">
-                        <div class="card product-card">
-                            <img src="./Resources/Images/laptop.jpeg">
-                            <div class="card-body text-center">
-                                <h5>Laptop</h5>
-                                <p>₹49,999</p>
-                                <button class="btn btn-primary btn-sm" data-bs-target="#Electronics1Cart" data-bs-toggle="modal">Add to
-                                    Cart</button>
-                                <button class="btn btn-outline-primary btn-sm" data-bs-target="#Electronics1Details"
-                                    data-bs-toggle="modal">View Details</button>
-                            </div>
-                        </div>
-                    </div>
-                
-                    <div class="col-md-4">
-                        <div class="card product-card">
-                            <img src="./Resources/Images/headphone.jpeg">
-                            <div class="card-body text-center">
-                                <h5>Headphones</h5>
-                                <p>₹2,499</p>
-                                <button class="btn btn-primary btn-sm" data-bs-target="#Electronics2Cart" data-bs-toggle="modal">Add to
-                                    Cart</button>
-                                <button class="btn btn-outline-primary btn-sm" data-bs-target="#Electronics2Details"
-                                    data-bs-toggle="modal">View Details</button>
-                            </div>
-                        </div>
-                    </div>
-                
-                    <div class="col-md-4">
-                        <div class="card product-card">
-                            <img src="./Resources/Images/bluetooth.jpeg">
-                            <div class="card-body text-center">
-                                <h5>Bluetooth Speaker</h5>
-                                <p>₹1,799</p>
-                                <button class="btn btn-primary btn-sm" data-bs-target="#Electronics3Cart" data-bs-toggle="modal">Add to
-                                    Cart</button>
-                                <button class="btn btn-outline-primary btn-sm" data-bs-target="#Electronics3Details"
-                                    data-bs-toggle="modal">View Details</button>
-                            </div>
-                        </div>
-                    </div>
-                
-                </div>
+                <h4  class="mb-4">Electronics</h4>
+                <div  class="row g-4 mb-5" id="electronics"></div>
                 
                 
                 <!-- Beauty Section -->
-                <h4 id="beauty" class="mb-4">Beauty</h4>
-                <div  class="row g-4 mb-5">
-
-                    <div class="col-md-4">
-                        <div class="card product-card">
-                            <img src="./Resources/Images/beauty.png">
-                            <div class="card-body text-center">
-                                <h5>Makeup Kit</h5>
-                                <p>₹999</p>
-                                <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#Beauty1Cart">Add to
-                                    Cart</button>
-                                <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal"
-                                    data-bs-target="#Beauty1Details">View Details</button>
-                            </div>
-                        </div>
-                    </div>
-                
-                    <div class="col-md-4">
-                        <div class="card product-card">
-                            <img src="./Resources/Images/facecream.jpeg">
-                            <div class="card-body text-center">
-                                <h5>Face Cream</h5>
-                                <p>₹499</p>
-                                <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#Beauty2Cart">Add to
-                                    Cart</button>
-                                <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal"
-                                    data-bs-target="#Beauty2Details">View Details</button>
-                            </div>
-                        </div>
-                    </div>
-                
-                    <div class="col-md-4">
-                        <div class="card product-card">
-                            <img src="./Resources/Images/perfumes.jpeg">
-                            <div class="card-body text-center">
-                                <h5>Perfume</h5>
-                                <p>₹1,299</p>
-                                <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#Beauty3Cart">Add to
-                                    Cart</button>
-                                <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal"
-                                    data-bs-target="#Beauty3Details">View Details</button>
-                            </div>
-                        </div>
-                    </div>
-                
-                </div>
+                <h4  class="mb-4">Beauty</h4>
+                <div  class="row g-4 mb-5" id="beauty"></div>
                 
                 
                 <!-- Sports Section -->
-                <h4 id="sports" class="mb-4">Sports</h4>
-                <div class="row g-4 mb-5">
+                <h4  class="mb-4">Sports</h4>
+                <div class="row g-4 mb-5" id="sports"></div>
 
-                    <div class="col-md-4">
-                        <div class="card product-card">
-                            <img src="./Resources/Images/sports.png">
-                            <div class="card-body text-center">
-                                <h5>Cricket Balls</h5>
-                                <p>₹1,499</p>
-                                <button class="btn btn-primary btn-sm" data-bs-target="#Sports1Cart" data-bs-toggle="modal">Add to
-                                    Cart</button>
-                                <button class="btn btn-outline-primary btn-sm" data-bs-target="#Sports1Details"
-                                    data-bs-toggle="modal">View Details</button>
-                            </div>
-                        </div>
-                    </div>
-                
-                    <div class="col-md-4">
-                        <div class="card product-card">
-                            <img src="./Resources/Images/football.jpeg">
-                            <div class="card-body text-center">
-                                <h5>Football</h5>
-                                <p>₹699</p>
-                                <button class="btn btn-primary btn-sm" data-bs-target="#Sports2Cart" data-bs-toggle="modal">Add to
-                                    Cart</button>
-                                <button class="btn btn-outline-primary btn-sm" data-bs-target="#Sports2Details"
-                                    data-bs-toggle="modal">View Details</button>
-                            </div>
-                        </div>
-                    </div>
-                
-                    <div class="col-md-4">
-                        <div class="card product-card">
-                            <img src="./Resources/Images/tennis.jpeg">
-                            <div class="card-body text-center">
-                                <h5>Tennis Kit</h5>
-                                <p>₹899</p>
-                                <button class="btn btn-primary btn-sm" data-bs-target="#Sports3Cart" data-bs-toggle="modal">Add to
-                                    Cart</button>
-                                <button class="btn btn-outline-primary btn-sm" data-bs-target="#Sports3Details"
-                                    data-bs-toggle="modal">View Details</button>
-                            </div>
-                        </div>
-                    </div>
-                
-                </div>
-                
-                
                 <!-- Watches section -->
                 
-                <h4 id="watches" class="mb-4">Watches</h4>
-                <div  class="row g-4 mb-5">
-                
-                    <div class="col-md-4">
-                        <div class="card product-card">
-                            <img src="./Resources/Images/watches.png">
-                            <div class="card-body text-center">
-                                <h5>Analog Watch</h5>
-                                <p>₹1,999</p>
-                                <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#Watches1Cart">Add to
-                                    Cart</button>
-                                <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal"
-                                    data-bs-target="#Watches1Details">View Details</button>
-                            </div>
-                        </div>
-                    </div>
-                
-                    <div class="col-md-4">
-                        <div class="card product-card">
-                            <img src="./Resources/Images/smartwatch.jpeg">
-                            <div class="card-body text-center">
-                                <h5>Smart Watch</h5>
-                                <p>₹3,999</p>
-                                <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#Watches2Cart">Add to
-                                    Cart</button>
-                                <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal"
-                                    data-bs-target="#Watches2Details">View Details</button>
-                            </div>
-                        </div>
-                    </div>
-                
-                    <div class="col-md-4">
-                        <div class="card product-card">
-                            <img src="./Resources/Images/luxury.jpeg">
-                            <div class="card-body text-center">
-                                <h5>Luxury Watch</h5>
-                                <p>₹9,999</p>
-                                <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#Watches3Cart">Add to
-                                    Cart</button>
-                                <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal"
-                                    data-bs-target="#Watches3Details">View Details</button>
-                            </div>
-                        </div>
-                    </div>
-                
-                </div>
+                <h4  class="mb-4">Watches</h4>
+                <div  class="row g-4 mb-5" id="watches"></div>
                 
                 
                 <!-- Footwear section -->
 
-                <h4 id="footwear" class="mb-4">Footwear</h4>
-                <div class="row g-4 mb-5">
-
-                    <div class="col-md-4">
-                        <div class="card product-card">
-                            <img src="./Resources/Images/footwear.png">
-                            <div class="card-body text-center">
-                                <h5>Sandals</h5>
-                                <p>₹999</p>
-                                <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#Footwear1Cart">Add to
-                                    Cart</button>
-                                <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal"
-                                    data-bs-target="#Footwear1Details">View Details</button>
-                            </div>
-                        </div>
-                    </div>
-                
-                    <div class="col-md-4">
-                        <div class="card product-card">
-                            <img src="./Resources/Images/shoes.jpeg">
-                            <div class="card-body text-center">
-                                <h5>Shoes</h5>
-                                <p>₹1,999</p>
-                                <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#Footwear2Cart">Add to
-                                    Cart</button>
-                                <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal"
-                                    data-bs-target="#Footwear2Details">View Details</button>
-                            </div>
-                        </div>
-                    </div>
-                
-                    <div class="col-md-4">
-                        <div class="card product-card">
-                            <img src="./Resources/Images/sneakers.jpeg">
-                            <div class="card-body text-center">
-                                <h5>Sneakers</h5>
-                                <p>₹2,499</p>
-                                <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#Footwear3Cart">Add to
-                                    Cart</button>
-                                <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal"
-                                    data-bs-target="#Footwear3Details">View Details</button>
-                            </div>
-                        </div>
-                    </div>
-                
-                </div>
+                <h4  class="mb-4">Footwear</h4>
+                <div class="row g-4 mb-5" id="footwear"></div>
                 
                 
                 <!-- Medical Section -->
                 
-                <h4 id="medical" class="mb-4">Medical Equipments</h4>
-                <div class="row g-4 mb-5">
-
-                    <div class="col-md-4">
-                        <div class="card product-card">
-                            <img src="./Resources/Images/medical.png">
-                            <div class="card-body text-center">
-                                <h5>Nebulizer</h5>
-                                <p>₹2,999</p>
-                                <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#Medical1Cart">Add to
-                                    Cart</button>
-                                <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal"
-                                    data-bs-target="#Medical1Details">View Details</button>
-                            </div>
-                        </div>
-                    </div>
-                
-                    <div class="col-md-4">
-                        <div class="card product-card">
-                            <img src="./Resources/Images/bpmonitor.jpeg" class="img-fluid">
-                            <div class="card-body text-center">
-                                <h5>BP Monitor</h5>
-                                <p>₹1,799</p>
-                                <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#Medical2Cart">Add to
-                                    Cart</button>
-                                <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal"
-                                    data-bs-target="#Medical2Details">View Details</button>
-                            </div>
-                        </div>
-                    </div>
-                
-                    <div class="col-md-4">
-                        <div class="card product-card">
-                            <img src="./Resources/Images/thermometer.jpeg" class="card-img-bottom">
-                            <div class="card-body text-center">
-                                <h5>Thermometer</h5>
-                                <p>₹399</p>
-                                <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#Medical3Cart">Add to
-                                    Cart</button>
-                                <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal"
-                                    data-bs-target="#Medical3Details">View Details</button>
-                            </div>
-                        </div>
-                    </div>
-                
-                </div>
+                <h4  class="mb-4">Medical Equipments</h4>
+                <div class="row g-4 mb-5" id="medical"></div>
 
             </div>
         </section>
@@ -2273,7 +1735,7 @@
     <!-- Modal Section Ended -->
 
 
-
+    <script src="./js/index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>

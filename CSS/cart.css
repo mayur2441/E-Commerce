@@ -9,3 +9,7 @@
 .product_cart{
     border-radius: 20px;
 }
+
+.card-hover:hover{
+  box-shadow: 1px 1px 5px rgb(199, 193, 193);
+}

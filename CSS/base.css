@@ -9,6 +9,25 @@ body {
   padding-top: 90px; /* height of navbar */
 }
 
+.footer-brand {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* left aligned like screenshot */
+}
+
+.footer-logo {
+    width: 250px;          /* control logo size */
+    margin-bottom: 12px;  /* tight spacing */
+}
+
+.footer-tagline {
+    margin: 0;            /* REMOVE default <p> margin */
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+
 .logo-wrapper {
   background: #ffffff;
   padding: 6px 10px;

@@ -5,6 +5,9 @@ if (!product) {
   
 }
 
+
+
+
 /* ---------- SAFE TITLE ---------- */
 
 
@@ -46,8 +49,9 @@ document.getElementById("productDetails").innerHTML = `
     <p class="text-muted">Inclusive of all taxes</p>
 
     <!-- OFFERS -->
-    <h6>Offers</h6>
-    <div class="row">
+    
+    <img src="./Resources/Icons/offer.png" style="height: 40px; width: 40px;"><strong> Offers</strong></img>
+    <div class="row"> 
       ${product.offers.map(offer => `
         <div class="col-6 mb-2">
           <div class="border p-2 rounded small">
@@ -93,7 +97,7 @@ document.getElementById("productDetails").innerHTML = `
         Add to Cart
       </button>
 
-      <button class="btn btn-buy w-100 mb-2">Buy Now</button>
+      <button class="btn btn-buy w-100 mb-2" onclick="buyNow(${product.id}, '${product.category}')">Buy Now</button>
 
       <button class="btn btn-outline-secondary w-100">
         Add to Wish List
@@ -104,6 +108,47 @@ document.getElementById("productDetails").innerHTML = `
 </div>
 `;
 
+function AddToCart(id, category) {
+    const product = getProductById(id, category);
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+    const existingProduct = cart.find(item => item.id === id);
+
+    if (existingProduct) {
+        existingProduct.quantity = (existingProduct.quantity || 1) + 1;
+    } else {
+        cart.push({ ...product, quantity: 1 });
+    }
+
+    localStorage.setItem("cart", JSON.stringify(cart));
+    window.location.href = "cart.html";
+}
+
+
+function buyNow(id, category) {
+    
+  window.location.href = "checkout.html";
+}
+
+
+
+//helper to get the products.
+function getProductById(id, category) {
+    const map = {
+        Clothing: clothing_products,
+        "Home Appliances": home_appliances_products,
+        Toys: toys_products,
+        Mobile: mobile_products,
+        Electronics: electronics_products,
+        Beauty: beauty_products,
+        Sports: sports_products,
+        Watches: watches_products,
+        Footwear: footwear_products,
+        "Medical Equipments": medical_products
+    };
+
+    return map[category].find(p => p.id === id);
+}
 /* ---------- STARS ---------- */
 function generateStars(rating) {
   let stars = "";

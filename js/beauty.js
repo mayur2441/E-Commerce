@@ -820,7 +820,7 @@ function renderProducts(products,containers){
                                 <div class="mb-4">
                                     <span class="fs-4 fw-bold">Rs. ${product.price}</span>
                                     <span class="text-muted text-decoration-line-through ms-2">
-                                        Rs. ${product.oldPrice}
+                                        Rs. ${product.mrp}
                                     </span>
                                 </div>
                                  <a class="btn btn-primary btn-sm" onclick="AddToCart(${product.id}, '${product.category}')" ><i class="bi bi-cart"></i> Add to Cart</a>

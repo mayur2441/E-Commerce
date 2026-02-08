@@ -1,0 +1,16 @@
+.cart_img {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+}
+
+.product_cart{
+    border-radius: 20px;
+}
+
+
+.card-hover:hover{
+  box-shadow: 1px 1px 5px rgb(199, 193, 193);
+}

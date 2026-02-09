@@ -1,6 +1,6 @@
 .cart_img {
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    max-width: 100%;
     object-fit: contain;
     background-color: #f2f2f2;
     border-radius: 10px;

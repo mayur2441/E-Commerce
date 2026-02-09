@@ -75,39 +75,52 @@ const container = document.getElementById("hotDealsContainer");
 
 products.forEach(product => {
     container.innerHTML += `
-        <div class="col-md-3 mb-4">
-            <div class="card position-relative card-hover" style="width: 21rem;">
-                
-                <img src="${product.image}" class="card-img-top card-image" alt="${product.title}">
-                
-                <div class="position-absolute top-0 end-0 m-3">
-                    <span class="bg-danger text-white px-2 py-1 rounded">
-                        Save Rs. ${product.save}.00
-                    </span>
-                </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+    <div class="card position-relative card-hover h-100">
 
-                <div class="card-body">
-                    <p class="text-secondary">${product.category}</p>
-                    <h5 class="card-title">${product.title}</h5>
+        <!-- Product Image -->
+        <img src="${product.image}" 
+             class="card-img-top card-image img-fluid"
+             alt="${product.title}">
 
-                    <p class="card-text">
-                        ${generateStars(product.rating)}
-                        <span>(${product.reviews})</span>
-                    </p>
-
-                    <div class="pb-3">
-                        <span class="fs-5 fw-bold">Rs. ${product.price}</span>
-                        <span class="text-decoration-line-through text-secondary">Rs.${product.oldPrice}</span>
-                    </div>
-
-                    <div class="d-flex justify-content-center">
-                        <button class="btn btn-primary w-100">
-                            <i class="bi bi-cart2"></i> Add To Cart
-                        </button>
-                    </div>
-                </div>
-            </div>
+        <!-- Save Badge -->
+        <div class="position-absolute top-0 end-0 m-2">
+            <span class="bg-danger text-white px-2 py-1 rounded small">
+                Save Rs. ${product.save}
+            </span>
         </div>
+
+        <div class="card-body d-flex flex-column">
+
+            <p class="text-secondary small mb-1">${product.category}</p>
+
+            <h6 class="card-title fw-semibold">
+                ${product.title}
+            </h6>
+
+            <p class="card-text mb-2">
+                ${generateStars(product.rating)}
+                <span class="small">(${product.reviews})</span>
+            </p>
+
+            <div class="mb-3">
+                <span class="fs-6 fw-bold me-2">Rs. ${product.price}</span>
+                <span class="text-decoration-line-through text-secondary small">
+                    Rs. ${product.oldPrice}
+                </span>
+            </div>
+
+            <!-- Push button to bottom -->
+            <div class="mt-auto">
+                <button class="btn btn-primary w-100">
+                    <i class="bi bi-cart2 me-1"></i> Add To Cart
+                </button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
     `;
 });
 

@@ -35,3 +35,29 @@
 }
 
 /* Order_page_Css End */
+
+.order-card {
+    border-radius: 8px;
+}
+
+.order-img {
+    width: 110px;
+    max-width: 100%;
+    border-radius: 6px;
+}
+
+.status-shipped {
+    background: #e8f5ff;
+    color: #0d6efd;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 13px;
+}
+
+.badge-delivered {
+    background: #e6f4ea;
+    color: #198754;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 13px;
+}

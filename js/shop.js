@@ -781,57 +781,89 @@ const medical_products = [
     }
 ];
 
-//const clothing = document.getElementById("products");
 
-const mobile1 = document.getElementById("mobile");
+const ALL_PRODUCTS = [
+    ...clothing_products,
+    ...home_appliances_products,
+    ...toys_products,
+    ...mobile_products,
+    ...electronics_products,
+    ...beauty_products,
+    ...sports_products,
+    ...watches_products,
+    ...footwear_products,
+    ...medical_products
+];
 
-renderProducts(mobile_products, mobile1);
+function shuffleProducts(products) {
+    const shuffled = [...products]; // don’t mutate original
+    for (let i = shuffled.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+    }
+    return shuffled;
+}
 
-function renderProducts(products,containers){
-    return products.forEach(product => {
-    containers.innerHTML += `
-                    <div class="col-md-4 ">
-                        <div class="card product-card h-100 border rounded-4 overflow-hidden">
-                            <div class="position-relative">
-                                <img src="${product.mainImage}" class="card-img-top" alt="${product.mainImage}">
-                    
-                                
-                                <span class="badge bg-primary position-absolute top-0 start-0 m-3 px-3 py-2">
-                                    ${product.badge}
-                                </span>
-                    
-                                <span class="badge bg-danger position-absolute top-0 end-0 m-3 px-3 py-2">
-                                    Save Rs.${product.save}
-                                </span>
-                            </div>
-                            <div class="card-body">
-                                 <p class="text-secondary fs-6">${product.category}</p>
-                                <h5 class="fw-bold mb-2">
-                                   ${product.title}
-                                </h5>
-                                
-                                <div class="d-flex align-items-center mb-3">
-                                    <p class="card-text">
-                                        ${generateStars(product.rating)}
-                                        <span>(${product.reviews})</span>
-                                    </p>
+
+const mixedProducts = shuffleProducts(ALL_PRODUCTS);
+
+const container = document.getElementById("allProducts");
+
+mixedProducts.forEach(product => {
+    container.innerHTML += `
+        <div class="col-md-4 mb-4 d-flex">
+                                    <div class="card h-100 w-100 product-card">
+
+                                        <!-- badges -->
+                                         <span
+                                            class="badge bg-primary position-absolute top-0 start-0 m-2 px-2 py-1 small fw-semibold">
+                                            New Arrival
+                                        </span>
+                                        <span
+                                            class="badge bg-danger position-absolute top-0 end-0 m-2 px-2 py-1 small fw-semibold">
+                                            Save Rs ${product.save}.
+                                        </span>
+
+                                        <!-- Image -->
+                                        <div class="img-wrapper">
+                                            <img src="${product.mainImage}"
+                                                class="card-img-top object-fit-cover" style="height: 200px;"
+                                                alt="Product 3">
+                                        </div>
+
+                                        <!-- Body -->
+                                        <div class="card-body d-flex flex-column">
+                                            <p class="text-muted mb-1">${product.category}</p>
+
+                                            <h5 class="card-title">${product.title}</h5>
+
+                                            <p class="card-text mb-2">
+                                                ${generateStars(product.rating)}
+                                                <span class="small">(${product.reviews})</span>
+                                            </p>
+
+                                            <p class="fw-bold mb-3">Rs ${product.price}</p>
+
+                                            <button class="btn btn-primary w-100" onclick="AddToCart(${product.id}, '${product.category}')">
+                                <i class="bi bi-cart2 me-1"></i> Add To Cart
+                            </button>
+                                        </div>
+                                    </div>
                                 </div>
-                    
-                                
-                                <div class="mb-4">
-                                    <span class="fs-4 fw-bold">Rs. ${product.price}</span>
-                                    <span class="text-muted text-decoration-line-through ms-2">
-                                        Rs. ${product.mrp}
-                                    </span>
-                                </div>
-                                 <a class="btn btn-primary btn-sm" onclick="AddToCart(${product.id}, '${product.category}')" ><i class="bi bi-cart"></i> Add to Cart</a>
-                                <a class="btn btn-outline-primary btn-sm" onclick="GoToDetails(${product.id}, '${product.category}')" >View
-                                    Details</a>
-                            </div>
-                        </div>
-                    </div>
-                `;
-    });
+    `;
+});
+
+
+
+
+function generateStars(rating) {
+    let stars = "";
+    for (let i = 1; i <= 5; i++) {
+        stars += i <= rating
+            ? `<i class="bi bi-star-fill text-warning"></i>`
+            : `<i class="bi bi-star-fill text-secondary"></i>`;
+    }
+    return stars;
 }
 
 function AddToCart(id, category) {
@@ -852,28 +884,6 @@ function AddToCart(id, category) {
     window.location.href = "cart.html";
 }
 
-
-function GoToDetails(id, category) {
-    const product = getProductById(id, category);
-
-    if (!product) {
-        console.error("Product not found:", id, category);
-        alert("Product not found");
-        return;
-    }
-
-    localStorage.setItem("detail", JSON.stringify(product));
-    window.location.href = "product_details.html";
-}
-
-
-function getRandomOffers(maxOffers = 2) {
-    const shuffled = [...OFFER_POOL].sort(() => 0.5 - Math.random());
-    return shuffled.slice(0, Math.floor(Math.random() * maxOffers) + 1);
-}
-
-
-//helper to get the products.
 function getProductById(id, category) {
     const map = {
         Clothing: clothing_products,
@@ -891,15 +901,15 @@ function getProductById(id, category) {
     return map[category].find(p => p.id === id);
 }
 
-
-function generateStars(rating) {
-    let stars = "";
-    for (let i = 1; i <= 5; i++) {
-        stars += i <= rating
-            ? `<i class="bi bi-star-fill text-warning"></i>`
-            : `<i class="bi bi-star-fill text-secondary"></i>`;
-    }
-    return stars;
+function getRandomProducts(products, count = 8) {
+    const shuffled = [...products].sort(() => 0.5 - Math.random());
+    return shuffled.slice(0, count);
 }
+function getRandomOffers(maxOffers = 2) {
+    const shuffled = [...OFFER_POOL].sort(() => 0.5 - Math.random());
+    return shuffled.slice(0, Math.floor(Math.random() * maxOffers) + 1);
+}
+
+
 
 

@@ -127,7 +127,7 @@ function AddToCart(id, category) {
 
 function buyNow(id, category) {
     
-  window.location.href = "checkout.html";
+  window.location.href = "productDetails_checkout.html";
 }
 
 

@@ -1,10 +1,9 @@
-//const detailRaw = JSON.parse(localStorage.getItem("detail"))|| [];
-const products = JSON.parse(localStorage.getItem("cart"))|| [];
+const product = JSON.parse(localStorage.getItem("detail"))|| [];
+
+//const products = [...products1, ...products2];
 
 
-
-products.forEach(product => {
-    document.getElementById("checkoutProducts").innerHTML += `
+    document.getElementById("checkoutProducts1").innerHTML += `
     <div class= "gap-3">
                                 <img src="${product.mainImage}"
                                     class="product-img">
@@ -28,13 +27,13 @@ products.forEach(product => {
                                     <!-- Quantity -->
                                     <div class="qty-box mt-2">
                                         <i class="bi bi-trash"></i>
-                                        <span>${product.quantity}</span>
+                                        <span>1 </span>
                                         <i class="bi bi-plus"></i>
                                     </div>
                                 </div>
                             </div>
 `;
-});
+
 
 
 function getDateAfter7Days() {
@@ -51,15 +50,15 @@ function getDateAfter7Days() {
 }
 
 // set date on page load
-document.getElementById("deliveryDate").innerText +=
+document.getElementById("deliveryDate2").innerText +=
     ` 7 AM to 9 PM, Delivery by ${getDateAfter7Days()}`;
 
 
-    document.getElementById("deliveryDate1").innerText +=
+    document.getElementById("deliveryDate3").innerText +=
     ` Delivery by ${getDateAfter7Days()}`;
 
 
-     document.getElementById("priceSection").innerHTML +=` 
+     document.getElementById("priceSection1").innerHTML +=` 
 
      <div class="card-box order-summary">
 
@@ -92,20 +91,20 @@ document.getElementById("deliveryDate").innerText +=
     function calculatePrice(){
     let price=0;
     
-    products.forEach(product => {
-        price+=(product.price * product.quantity);
+    
+        price+=(product.price );
 
-    });
+    
     return price.toFixed(2);
 }
 
 function calculateTax(){
     let tax=0;
     
-    products.forEach(product => {
-        tax+=(product.price * product.quantity);
+    
+        tax+=(product.price );
 
-    });
+    
     return (tax*(18/100)).toFixed(2);
 }
 
@@ -113,10 +112,10 @@ function calculateTotalPrice(){
     let tax=0;
     let price=0;
     
-    products.forEach(product => {
-        price+=(product.price * product.quantity);
+   
+        price+=(product.price);
 
-    });
+    
     return (price*(18/100) + price).toFixed(2);
 }
 
@@ -139,6 +138,6 @@ function getFinalPrice() {
   return  product.price+5;
 }
 function goToSuccess(){
-    localStorage.removeItem("cart");
+    localStorage.removeItem("details")
     window.location.href="order_success.html"
 }

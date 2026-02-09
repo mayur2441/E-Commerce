@@ -859,7 +859,9 @@ function AddToCart(id, category) {
   const product = getProductById(id, category);
   let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
-  const existingProduct = cart.find(item => item.id === id);
+  const existingProduct = cart.find(
+    item => item.id === id && item.category === category
+);
 
   if (existingProduct) {
     existingProduct.quantity = (existingProduct.quantity || 1) + 1;

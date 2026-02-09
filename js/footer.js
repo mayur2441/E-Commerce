@@ -1,5 +1,5 @@
-const data=document.getElementById("footerSection");
-data.innerHTML += `
+const data1=document.getElementById("footerSection");
+data1.innerHTML += `
  <div class="container" >
                     <div class="row">
 

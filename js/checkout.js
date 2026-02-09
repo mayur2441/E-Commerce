@@ -139,6 +139,9 @@ function getFinalPrice() {
   return  product.price+5;
 }
 function goToSuccess(){
+
+    
+    localStorage.setItem("orderedProducts", JSON.stringify(products));
     localStorage.removeItem("cart");
     window.location.href="order_success.html"
 }

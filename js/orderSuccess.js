@@ -1,6 +1,11 @@
 function viewOrder() {
-  const cartProducts =
-    JSON.parse(localStorage.getItem("orderedProducts")) || [];
+  let cartProducts = JSON.parse(localStorage.getItem("orderedProducts")) || [];
+
+// normalize to array (VERY IMPORTANT)
+if (!Array.isArray(cartProducts)) {
+  cartProducts = [cartProducts];
+}
+
 
   if (cartProducts.length === 0) {
     alert("Cart is empty");
@@ -26,7 +31,7 @@ function viewOrder() {
   orders.push(order);
 
   localStorage.setItem("orders", JSON.stringify(orders));
-  localStorage.setItem("selectedOrder", JSON.stringify(order));
+  localStorage.removeItem("selectedOrder");
 
   // optional
   // localStorage.removeItem("orderedProducts");

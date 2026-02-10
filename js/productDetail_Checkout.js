@@ -1,9 +1,10 @@
-const product = JSON.parse(localStorage.getItem("detail"))|| [];
+const product = JSON.parse(localStorage.getItem("detail")) || {};
+
 
 //const products = [...products1, ...products2];
 
 
-    document.getElementById("checkoutProducts1").innerHTML += `
+    document.getElementById("checkoutProducts1").innerHTML = `
     <div class= "gap-3">
                                 <img src="${product.mainImage}"
                                     class="product-img">
@@ -88,36 +89,23 @@ document.getElementById("deliveryDate2").innerText +=
                     </div>
     `;
 
-    function calculatePrice(){
-    let price=0;
-    
-    
-        price+=(product.price );
-
-    
-    return price.toFixed(2);
+    function calculatePrice() {
+  const price = Number(product.price) || 0;
+  return price.toFixed(2);
 }
 
-function calculateTax(){
-    let tax=0;
-    
-    
-        tax+=(product.price );
-
-    
-    return (tax*(18/100)).toFixed(2);
+function calculateTax() {
+  const price = Number(product.price) || 0;
+  return (price * 0.18).toFixed(2);
 }
 
-function calculateTotalPrice(){
-    let tax=0;
-    let price=0;
-    
-   
-        price+=(product.price);
 
-    
-    return (price*(18/100) + price).toFixed(2);
+function calculateTotalPrice() {
+  const price = Number(product.price) || 0;
+  const tax = price * 0.18;
+  return (price + tax).toFixed(2);
 }
+
 
 
 // function getDateAfter7Days() { 
@@ -138,6 +126,8 @@ function getFinalPrice() {
   return  product.price+5;
 }
 function goToSuccess(){
+     localStorage.setItem("orderedProducts", JSON.stringify(product));
+    //localStorage.removeItem("cart");
     localStorage.removeItem("details")
     window.location.href="order_success.html"
 }

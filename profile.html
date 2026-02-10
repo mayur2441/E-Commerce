@@ -22,8 +22,82 @@
     <!-- main section started -->
     <main>
        
-<h1>My Profile</h1>
-        
+        <div class="container my-5">
+            <div class="row justify-content-center">
+
+                <div class="col-lg-8">
+
+                    <div class="card shadow-sm">
+                        <div class="card-body p-4">
+
+                            <!-- Header -->
+                            <div class="d-flex align-items-center gap-3 mb-4">
+                                <div class="profile-avatar" id="profileAvatar"></div>
+                                <div>
+                                    <h5 class="fw-bold mb-0" id="profileName"></h5>
+                                    <small class="text-muted" id="profileEmail"></small>
+                                </div>
+                            </div>
+
+                            <hr>
+
+                            <!-- Profile Sections -->
+                            <div class="row g-3">
+
+                                <div class="col-md-6">
+                                    <div class="info-box">
+                                        <i class="bi bi-person"></i>
+                                        <div>
+                                            <p class="mb-0 fw-semibold">Personal Info</p>
+                                            <small>Edit name & email</small>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="info-box">
+                                        <i class="bi bi-geo-alt"></i>
+                                        <div>
+                                            <p class="mb-0 fw-semibold">Addresses</p>
+                                            <small>Manage delivery addresses</small>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="info-box">
+                                        <i class="bi bi-bag"></i>
+                                        <div>
+                                            <p class="mb-0 fw-semibold">My Orders</p>
+                                            <small>View order history</small>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="info-box">
+                                        <i class="bi bi-shield-lock"></i>
+                                        <div>
+                                            <p class="mb-0 fw-semibold">Security</p>
+                                            <small>Password & login settings</small>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <hr class="my-4">
+
+                            <div class="text-end">
+                                <button class="btn btn-danger" onclick="logout()">Logout</button>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
     </main>
     <!-- footer section started -->
     <footer class="footer-gradient text-light pt-5 pb-4" id="footerSection">
@@ -33,7 +107,8 @@
     </footer>
 
 
-<script src="./js/navigation.js"></script>    
+<script src="./js/navigation.js"></script> 
+ <script src="./js/profile.js"></script>   
 <script src="./js/footer.js"></script>
 
     <!-- footer section ended -->

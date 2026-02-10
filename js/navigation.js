@@ -54,10 +54,30 @@ data.innerHTML += `
                             <a class="nav-link" href="cart.html"> <i class="bi bi-cart me-1"></i>
                             </a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="profile.html"> <i class="bi bi-person-circle "></i>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#"
+                                id="profileDropdown"
+                                role="button"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false">
+
+                                <span id="profileIcon">
+                                <i class="bi bi-person-circle"></i>
+                                </span>
                             </a>
+
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="profileDropdown">
+                                <li><a class="dropdown-item" href="profile.html">Profile</a></li>
+                                <li><a class="dropdown-item" href="settings.html">Settings</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li>
+                                <a class="dropdown-item text-danger" href="#" onclick="logout()">
+                                    Logout
+                                </a>
+                                </li>
+                            </ul>
                         </li>
+
                        
 
                        
@@ -161,6 +181,37 @@ data.innerHTML += `
                     dat.getFullYear;
                     return dat.getFullYear();
                 }
+
+
+                document.addEventListener("DOMContentLoaded", () => {
+  const user = JSON.parse(localStorage.getItem("user"));
+  const profileIcon = document.getElementById("profileIcon");
+  const profileDropdown = document.getElementById("profileDropdown");
+
+  if (!profileIcon || !profileDropdown) return;
+
+  if (user) {
+    // logged in → show initials
+   const firstName = user.name.split(" ")[0];
+
+profileIcon.innerHTML = `
+  <span class="profile-name">${firstName}</span>
+`;
+  } else {
+    // not logged in → redirect to login
+    profileDropdown.addEventListener("click", (e) => {
+      e.preventDefault();
+      window.location.href = "login.html";
+    });
+  }
+});
+
+
+function logout() {
+  localStorage.removeItem("user");
+  window.location.href = "index.html";
+}
+
 
                 
 

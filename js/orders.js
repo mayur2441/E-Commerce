@@ -5,6 +5,8 @@ container.innerHTML = ""; // important to avoid duplicates
 
 myOrders.forEach(order => {
 
+  const status = getOrderStatus(order.createdAt);
+
   // 🔁 loop through products inside this order
   const productsHtml = order.products.map(product => `
     <div class="d-flex gap-3 mb-3">
@@ -30,17 +32,20 @@ myOrders.forEach(order => {
 
       <div class="d-flex justify-content-between align-items-center mt-3">
         <span class="fw-semibold">
-          Total: ₹${Number(order.totalAmount).toFixed(2)}
+          Total(including taxes): ₹${Number(order.totalAmount).toFixed(2)}
         </span>
 
-        <span class="status-shipped">
-          <i class="bi bi-truck"></i> Shipped
+       
+
+        <span class="${status.className}">
+          <i class="bi ${status.icon}"></i> ${status.text}
         </span>
+
       </div>
       <!-- Buttons -->
       <div class="mt-3 d-flex flex-wrap gap-2">
-        <button class="btn btn-primary btn-sm"
-                onclick="trackOrder('${order.orderId}')">
+        <button class="btn btn-outline-secondary btn-sm"
+                onclick="trackOrder('${order.orderId}', ${order.createdAt})">
           Track Order
         </button>
 
@@ -49,12 +54,41 @@ myOrders.forEach(order => {
           Reorder
         </button>
 
-        <button class="btn btn-outline-secondary btn-sm"
-                onclick="viewOrderDetails('${order.orderId}')">
-          View Details
-        </button>
       </div>
 
     </div>
   `;
 });
+
+function trackOrder(id,cdate) {
+let stat = getOrderStatus(cdate);
+    alert(`Order #${id} is currently ${stat.text}`);
+}
+
+function getOrderStatus(createdAt) {
+  const now = Date.now();
+  const diffHours = (now - createdAt) / (1000 * 60 * 60);
+
+  if (diffHours < 24) {
+    return {
+      text: "Shipped",
+      icon: "bi-truck",
+      className: "status-shipped"
+    };
+  }
+
+  if (diffHours < 48) {
+    return {
+      text: "In Transit",
+      icon: "bi-box-seam",
+      className: "status-transit"
+    };
+  }
+
+  return {
+    text: "Delivered",
+    icon: "bi-check-circle",
+    className: "status-delivered"
+  };
+}
+
